@@ -19,6 +19,10 @@ Freedom Tools - iOS Applications
 box-sizing:border-box;
 }
 
+[hidden]{
+display:none !important;
+}
+
 
 body{
 
@@ -171,6 +175,66 @@ box-shadow:none;
 
 }
 
+.contact-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+margin-top:18px;
+
+}
+
+.contact-item{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+}
+
+.contact-value{
+
+min-width:240px;
+
+}
+
+.copy-button{
+
+border:1px solid #2865c8;
+
+background:white;
+
+color:#2865c8;
+
+padding:6px 14px;
+
+border-radius:16px;
+
+cursor:pointer;
+
+font:inherit;
+
+}
+
+.copy-button:hover{
+
+background:#eef4ff;
+
+}
+
+.copy-button:focus-visible{
+
+outline:3px solid rgba(40,101,200,.25);
+
+outline-offset:2px;
+
+}
+
 
 
 .links a{
@@ -208,6 +272,22 @@ text-align:center;
 .hero h1{
 
 font-size:36px;
+
+}
+
+.contact-item{
+
+align-items:flex-start;
+
+}
+
+.contact-value{
+
+min-width:0;
+
+flex:1;
+
+overflow-wrap:anywhere;
 
 }
 
@@ -431,12 +511,24 @@ Freedom Tools 专注开发移动端效率工具，
 </p>
 
 
-<p>
+<div class="contact-list">
 
-Contact:
-somerking@foxmail.com
+<div class="contact-item">
+<span class="contact-value">邮箱：somerking@foxmail.com</span>
+<button class="copy-button" type="button" data-copy="somerking@foxmail.com" aria-label="复制邮箱">复制</button>
+</div>
 
-</p>
+<div class="contact-item">
+<span class="contact-value">微信：somerking</span>
+<button class="copy-button" type="button" data-copy="somerking" aria-label="复制微信号">复制</button>
+</div>
+
+<div class="contact-item">
+<span class="contact-value">QQ：274937420</span>
+<button class="copy-button" type="button" data-copy="274937420" aria-label="复制 QQ 号">复制</button>
+</div>
+
+</div>
 
 
 </div>
@@ -451,6 +543,49 @@ somerking@foxmail.com
 
 
 </div>
+
+
+<script>
+
+async function copyContact(button){
+
+const value=button.dataset.copy;
+
+try{
+
+if(navigator.clipboard && window.isSecureContext){
+await navigator.clipboard.writeText(value);
+}else{
+const textarea=document.createElement("textarea");
+textarea.value=value;
+textarea.style.position="fixed";
+textarea.style.opacity="0";
+document.body.appendChild(textarea);
+textarea.select();
+const copied=document.execCommand("copy");
+textarea.remove();
+if(!copied) throw new Error("copy failed");
+}
+
+button.textContent="已复制";
+
+}catch(error){
+
+button.textContent="复制失败";
+
+}
+
+setTimeout(()=>{
+button.textContent="复制";
+},1500);
+
+}
+
+document.querySelectorAll(".copy-button").forEach(button=>{
+button.addEventListener("click",()=>copyContact(button));
+});
+
+</script>
 
 
 </body>

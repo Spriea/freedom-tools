@@ -1,647 +1,308 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width,initial-scale=1">
-
-<title>
-Freedom Tools - iOS Applications
-</title>
-
-
-<style>
-
-*{
-box-sizing:border-box;
-}
-
-[hidden]{
-display:none !important;
-}
-
-
-body{
-
-margin:0;
-
-font-family:
--apple-system,
-BlinkMacSystemFont,
-"PingFang SC",
-"Microsoft YaHei";
-
-background:#f6f8fc;
-
-color:#1f2937;
-
-}
-
-
-
-.container{
-
-max-width:1100px;
-
-margin:auto;
-
-padding:40px 20px;
-
-}
-
-
-
-.hero{
-
-text-align:center;
-
-padding:80px 20px;
-
-}
-
-
-
-.hero h1{
-
-font-size:48px;
-
-color:#2865c8;
-
-margin-bottom:20px;
-
-}
-
-
-
-.hero p{
-
-font-size:20px;
-
-color:#666;
-
-}
-
-
-
-.card{
-
-background:white;
-
-border-radius:24px;
-
-padding:30px;
-
-margin:25px 0;
-
-box-shadow:
-0 10px 40px rgba(0,0,0,.08);
-
-}
-
-
-
-.app{
-
-display:flex;
-
-gap:25px;
-
-align-items:center;
-
-}
-
-
-
-.icon{
-
-width:100px;
-
-height:100px;
-
-border-radius:22px;
-
-background:#eee;
-
-}
-
-
-
-.button{
-
-display:inline-block;
-
-background:#2865c8;
-
-color:white;
-
-padding:10px 25px;
-
-border-radius:20px;
-
-text-decoration:none;
-
-}
-
-.store-actions{
-
-display:flex;
-
-flex-wrap:wrap;
-
-gap:10px;
-
-margin-top:16px;
-
-}
-
-.button.store{
-
-background:#111827;
-
-}
-
-.button.android-disabled{
-
-background:#e5e7eb;
-
-color:#6b7280;
-
-cursor:not-allowed;
-
-box-shadow:none;
-
-}
-
-.contact-list{
-
-display:flex;
-
-flex-direction:column;
-
-gap:12px;
-
-margin-top:18px;
-
-}
-
-.contact-item{
-
-display:flex;
-
-align-items:center;
-
-gap:12px;
-
-}
-
-.contact-value{
-
-min-width:240px;
-
-}
-
-.copy-button{
-
-border:1px solid #2865c8;
-
-background:white;
-
-color:#2865c8;
-
-padding:6px 14px;
-
-border-radius:16px;
-
-cursor:pointer;
-
-font:inherit;
-
-}
-
-.copy-button:hover{
-
-background:#eef4ff;
-
-}
-
-.copy-button:focus-visible{
-
-outline:3px solid rgba(40,101,200,.25);
-
-outline-offset:2px;
-
-}
-
-
-
-.links a{
-
-margin-right:20px;
-
-color:#2865c8;
-
-}
-
-
-
-.footer{
-
-text-align:center;
-
-color:#888;
-
-padding:40px;
-
-}
-
-
-
-@media(max-width:700px){
-
-.app{
-
-flex-direction:column;
-
-text-align:center;
-
-}
-
-.hero h1{
-
-font-size:36px;
-
-}
-
-.contact-item{
-
-align-items:flex-start;
-
-}
-
-.contact-value{
-
-min-width:0;
-
-flex:1;
-
-overflow-wrap:anywhere;
-
-}
-
-}
-
-</style>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Freedom Tools：简单、优雅、实用的移动应用与产品支持页面。">
+  <title>Freedom Tools｜简单、优雅、实用的应用</title>
+  <link rel="stylesheet" href="./assets/site.css">
 </head>
-
-
 <body>
-
-
-<div class="container">
-
-
-<section class="hero">
-
-
-<h1>
-Freedom Tools
-</h1>
-
-
-<p>
-打造简单、优雅、实用的 iOS 应用
-</p>
-
-
-</section>
-
-
-
-<div class="card app">
-
-
-<img class="icon"
-src="./assets/aquarium-log.png">
-
-
-<div>
-
-
-<h2>
-Aquarium Log
-</h2>
-
-
-<p>
-
-面向水族爱好者的本地鱼缸日志。
-记录水质、换水、喂食、维护与照片，
-并通过提醒和长期趋势持续了解鱼缸变化。
-
-</p>
-
-
-<div class="store-actions">
-
-<a class="button"
-href="./apps/aquarium-log/privacy.html">
-
-隐私政策
-
-</a>
-
-<a class="button store"
-href="https://apps.apple.com/app/id6800560984"
-target="_blank"
-rel="noopener">
-
-App Store 下载
-
-</a>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="card app">
-
-
-<img class="icon"
-src="./assets/icon-clock.png">
-
-
-<div>
-
-
-<h2>
-Floating Clock Pro
-</h2>
-
-
-<p>
-
-专业的 iOS 悬浮时钟工具。
-支持画中画悬浮显示、
-精准时间显示、
-倒计时和世界时钟。
-
-</p>
-
-
-<div class="store-actions">
-
-<a class="button"
-href="./apps/floating-clock/">
-
-查看详情
-
-</a>
-
-<a class="button store"
-href="https://apps.apple.com/app/id6794232576"
-target="_blank"
-rel="noopener">
-
-App Store 下载
-
-</a>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="card app">
-
-
-<img class="icon"
-src="./assets/icon-dark-grid-calculator.png"
-alt="暗格 - 私密空间 App Icon">
-
-
-<div>
-
-
-<h2>
-暗格 - 私密空间
-</h2>
-
-
-<p>
-
-使用空间密码保护的本地私人空间。
-支持照片、视频、笔记、清晰录音、
-盲拍、可选加密、ZIP 导出和跨设备备份。
-
-</p>
-
-
-<div class="store-actions">
-
-<a class="button"
-href="./apps/dark-grid-calculator/">
-
-查看详情
-
-</a>
-
-<a class="button store"
-href="https://apps.apple.com/app/id6798994319"
-target="_blank"
-rel="noopener">
-
-App Store 下载
-
-</a>
-
-<span class="button android-disabled"
-aria-disabled="true"
-title="Android 版本尚未上线">
-
-Android 敬请期待
-
-</span>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="card app" hidden>
-
-
-<img class="icon"
-src="./assets/icon-ppt.png">
-
-
-<div>
-
-
-<h2>
-PPT模板制作
-</h2>
-
-
-<p>
-
-海量 PPT 模板、
-课件、
-简历、
-工作汇报快速制作工具。
-
-</p>
-
-
-<div class="store-actions">
-
-<a class="button"
-href="./apps/ppt-template/">
-
-查看详情
-
-</a>
-
-<a class="button store"
-href="https://apps.apple.com/us/app/ppt%E6%A8%A1%E6%9D%BF%E5%88%B6%E4%BD%9C/id1557610286"
-target="_blank"
-rel="noopener">
-
-App Store 下载
-
-</a>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h2>
-关于 Freedom Tools
-</h2>
-
-
-<p>
-
-Freedom Tools 专注开发移动端效率工具，
-帮助用户提升工作和生活效率。
-
-</p>
-
-
-<div class="contact-list">
-
-<div class="contact-item">
-<span class="contact-value">邮箱：somerking@foxmail.com</span>
-<button class="copy-button" type="button" data-copy="somerking@foxmail.com" aria-label="复制邮箱">复制</button>
-</div>
-
-<div class="contact-item">
-<span class="contact-value">微信：somerking</span>
-<button class="copy-button" type="button" data-copy="somerking" aria-label="复制微信号">复制</button>
-</div>
-
-<div class="contact-item">
-<span class="contact-value">QQ：274937420</span>
-<button class="copy-button" type="button" data-copy="274937420" aria-label="复制 QQ 号">复制</button>
-</div>
-
-</div>
-
-
-</div>
-
-
-
-<div class="footer">
-
-© 2026 Freedom Tools
-
-</div>
-
-
-</div>
-
-
-<script>
-
-async function copyContact(button){
-
-const value=button.dataset.copy;
-
-try{
-
-if(navigator.clipboard && window.isSecureContext){
-await navigator.clipboard.writeText(value);
-}else{
-const textarea=document.createElement("textarea");
-textarea.value=value;
-textarea.style.position="fixed";
-textarea.style.opacity="0";
-document.body.appendChild(textarea);
-textarea.select();
-const copied=document.execCommand("copy");
-textarea.remove();
-if(!copied) throw new Error("copy failed");
-}
-
-button.textContent="已复制";
-
-}catch(error){
-
-button.textContent="复制失败";
-
-}
-
-setTimeout(()=>{
-button.textContent="复制";
-},1500);
-
-}
-
-document.querySelectorAll(".copy-button").forEach(button=>{
-button.addEventListener("click",()=>copyContact(button));
-});
-
-</script>
-
-
+  <div class="container">
+    <header class="hero">
+      <label class="language-switch" for="language-select">
+        <span>Language / 语言</span>
+        <select id="language-select" aria-label="Language / 语言">
+          <option value="zh">中文</option>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="pt">Português</option>
+          <option value="ru">Русский</option>
+        </select>
+      </label>
+      <h1>Freedom Tools</h1>
+      <p data-i18n="tagline">打造简单、优雅、实用的应用</p>
+    </header>
+
+    <main>
+      <article class="card app">
+        <img class="icon" src="./assets/aquarium-log.png" alt="Aquarium Log 应用图标" width="100" height="100">
+        <div>
+          <h2>Aquarium Log</h2>
+          <p data-i18n="aquariumDescription">面向水族爱好者的本地鱼缸日志。记录水质、换水、喂食、维护与照片，并通过提醒和长期趋势持续了解鱼缸变化。</p>
+          <div class="store-actions">
+            <a class="button" href="./apps/aquarium-log/privacy.html" data-i18n="privacyPolicy">隐私政策</a>
+            <a class="button" href="./apps/aquarium-log/support.html" data-i18n="support">技术支持</a>
+            <span class="button store unavailable" role="status" data-i18n="notAvailable">暂未上线</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card app">
+        <img class="icon" src="./assets/icon-clock.png" alt="Floating Clock Pro 应用图标" width="100" height="100">
+        <div>
+          <h2>Floating Clock Pro</h2>
+          <p data-i18n="clockDescription">专业的 iOS 悬浮时钟工具。支持画中画悬浮显示、精准时间显示、倒计时和世界时钟。</p>
+          <div class="store-actions">
+            <a class="button" href="./apps/floating-clock/" data-i18n="details">查看详情</a>
+            <a class="button store" href="https://apps.apple.com/app/id6794232576" target="_blank" rel="noopener" data-i18n="appStoreDownload">App Store 下载</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card app">
+        <img class="icon" src="./assets/icon-dark-grid-calculator.png" alt="暗格 - 私密空间应用图标" width="100" height="100">
+        <div>
+          <h2 data-i18n="darkGridName">暗格 - 私密空间</h2>
+          <p data-i18n="darkGridDescription">使用空间密码保护的本地私人空间。支持照片、视频、笔记、清晰录音、盲拍、可选加密、ZIP 导出和跨设备备份。</p>
+          <div class="store-actions">
+            <a class="button" href="./apps/dark-grid-calculator/" data-i18n="details">查看详情</a>
+            <span class="button store unavailable" role="status" data-i18n="notAvailable">暂未上线</span>
+            <span class="button unavailable" role="status" data-i18n="androidNotAvailable">Android 敬请期待</span>
+          </div>
+        </div>
+      </article>
+
+      <section class="card about">
+        <h2 data-i18n="aboutTitle">关于 Freedom Tools</h2>
+        <p data-i18n="aboutDescription">Freedom Tools 专注开发移动端效率工具，帮助用户提升工作和生活效率。</p>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-value" data-i18n="emailLabel">邮箱：somerking@foxmail.com</span>
+            <button class="copy-button" type="button" data-copy="somerking@foxmail.com" data-i18n="copy" data-i18n-aria-label="copyEmail">复制</button>
+          </div>
+          <div class="contact-item">
+            <span class="contact-value" data-i18n="wechatLabel">微信：somerking</span>
+            <button class="copy-button" type="button" data-copy="somerking" data-i18n="copy" data-i18n-aria-label="copyWechat">复制</button>
+          </div>
+          <div class="contact-item">
+            <span class="contact-value" data-i18n="qqLabel">QQ：274937420</span>
+            <button class="copy-button" type="button" data-copy="274937420" data-i18n="copy" data-i18n-aria-label="copyQQ">复制</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© 2026 Freedom Tools</footer>
+  </div>
+
+  <script>
+    const translations = {
+      zh: {
+        pageTitle: "Freedom Tools｜简单、优雅、实用的应用",
+        description: "Freedom Tools：简单、优雅、实用的移动应用与产品支持页面。",
+        tagline: "打造简单、优雅、实用的应用",
+        aquariumDescription: "面向水族爱好者的本地鱼缸日志。记录水质、换水、喂食、维护与照片，并通过提醒和长期趋势持续了解鱼缸变化。",
+        clockDescription: "专业的 iOS 悬浮时钟工具。支持画中画悬浮显示、精准时间显示、倒计时和世界时钟。",
+        darkGridName: "暗格 - 私密空间",
+        darkGridDescription: "使用空间密码保护的本地私人空间。支持照片、视频、笔记、清晰录音、盲拍、可选加密、ZIP 导出和跨设备备份。",
+        privacyPolicy: "隐私政策",
+        support: "技术支持",
+        details: "查看详情",
+        appStoreDownload: "App Store 下载",
+        notAvailable: "暂未上线",
+        androidNotAvailable: "Android 敬请期待",
+        aboutTitle: "关于 Freedom Tools",
+        aboutDescription: "Freedom Tools 专注开发移动端效率工具，帮助用户提升工作和生活效率。",
+        emailLabel: "邮箱：somerking@foxmail.com",
+        wechatLabel: "微信：somerking",
+        qqLabel: "QQ：274937420",
+        copy: "复制",
+        copied: "已复制",
+        copyFailed: "复制失败",
+        copyEmail: "复制邮箱",
+        copyWechat: "复制微信号",
+        copyQQ: "复制 QQ 号"
+      },
+      en: {
+        pageTitle: "Freedom Tools | Simple, Elegant, Useful Apps",
+        description: "Freedom Tools: simple, elegant, useful mobile apps and product support pages.",
+        tagline: "Simple, elegant, useful apps",
+        aquariumDescription: "A local aquarium journal for hobbyists. Track water quality, water changes, feeding, maintenance, and photos with reminders and long-term trends.",
+        clockDescription: "A professional floating clock for iOS with Picture in Picture display, precise time, countdowns, and world clocks.",
+        darkGridName: "Dark Grid - Private Space",
+        darkGridDescription: "A local private space protected by a space password. Manage photos, videos, notes, clear recordings, blind capture, optional encryption, ZIP export, and device-to-device backups.",
+        privacyPolicy: "Privacy Policy",
+        support: "Support",
+        details: "View Details",
+        appStoreDownload: "Download on the App Store",
+        notAvailable: "Not Yet Available",
+        androidNotAvailable: "Android Coming Soon",
+        aboutTitle: "About Freedom Tools",
+        aboutDescription: "Freedom Tools focuses on practical mobile productivity apps that make work and daily life easier.",
+        emailLabel: "Email: somerking@foxmail.com",
+        wechatLabel: "WeChat: somerking",
+        qqLabel: "QQ: 274937420",
+        copy: "Copy",
+        copied: "Copied",
+        copyFailed: "Copy failed",
+        copyEmail: "Copy email",
+        copyWechat: "Copy WeChat ID",
+        copyQQ: "Copy QQ number"
+      }
+    };
+
+    Object.assign(translations, {
+      ja: {
+        pageTitle: "Freedom Tools｜シンプルで便利なアプリ",
+        description: "Freedom Tools：シンプルで便利なモバイルアプリとサポートページ。",
+        tagline: "シンプルで、エレガントで、役立つアプリ",
+        aquariumDescription: "水族館愛好家向けのローカル水槽日誌。水質、水換え、給餌、メンテナンス、写真を記録し、リマインダーと長期的な傾向を確認できます。",
+        clockDescription: "ピクチャ・イン・ピクチャ、正確な時刻表示、カウントダウン、ワールドクロックに対応した iOS 用フローティングクロックです。",
+        darkGridName: "Dark Grid - プライベートスペース",
+        darkGridDescription: "スペースパスワードで保護されたローカルプライベートスペース。写真、動画、メモ、録音、ブラインド撮影、暗号化、ZIP 書き出し、端末間バックアップに対応します。",
+        privacyPolicy: "プライバシーポリシー", support: "サポート", details: "詳細を見る", appStoreDownload: "App Store からダウンロード",
+        notAvailable: "近日公開", androidNotAvailable: "Android 版は近日公開",
+        aboutTitle: "Freedom Tools について", aboutDescription: "Freedom Tools は、仕事や日常を便利にする実用的なモバイルアプリを開発しています。",
+        emailLabel: "メール：somerking@foxmail.com", wechatLabel: "WeChat：somerking", qqLabel: "QQ：274937420",
+        copy: "コピー", copied: "コピーしました", copyFailed: "コピーに失敗しました", copyEmail: "メールをコピー", copyWechat: "WeChat ID をコピー", copyQQ: "QQ 番号をコピー"
+      },
+      ko: {
+        pageTitle: "Freedom Tools｜간단하고 유용한 앱",
+        description: "Freedom Tools: 간단하고 유용한 모바일 앱과 지원 페이지입니다.",
+        tagline: "간단하고 우아하며 유용한 앱",
+        aquariumDescription: "수족관 애호가를 위한 로컬 수조 기록 앱입니다. 수질, 물갈이, 급여, 관리와 사진을 기록하고 알림과 장기 추세를 확인할 수 있습니다.",
+        clockDescription: "화면 속 화면, 정확한 시간 표시, 카운트다운과 세계 시계를 지원하는 iOS 플로팅 시계입니다.",
+        darkGridName: "Dark Grid - Private Space",
+        darkGridDescription: "공간 비밀번호로 보호되는 로컬 개인 공간입니다. 사진, 동영상, 메모, 녹음, 블라인드 촬영, 암호화, ZIP 내보내기와 기기 간 백업을 지원합니다.",
+        privacyPolicy: "개인정보 처리방침", support: "지원", details: "자세히 보기", appStoreDownload: "App Store에서 다운로드",
+        notAvailable: "출시 예정", androidNotAvailable: "Android 버전 출시 예정",
+        aboutTitle: "Freedom Tools 소개", aboutDescription: "Freedom Tools는 업무와 일상을 더 편리하게 만드는 실용적인 모바일 앱을 개발합니다.",
+        emailLabel: "이메일: somerking@foxmail.com", wechatLabel: "WeChat: somerking", qqLabel: "QQ: 274937420",
+        copy: "복사", copied: "복사됨", copyFailed: "복사 실패", copyEmail: "이메일 복사", copyWechat: "WeChat ID 복사", copyQQ: "QQ 번호 복사"
+      },
+      es: {
+        pageTitle: "Freedom Tools | Aplicaciones simples y útiles",
+        description: "Freedom Tools: aplicaciones móviles sencillas y páginas de soporte.",
+        tagline: "Aplicaciones simples, elegantes y útiles",
+        aquariumDescription: "Un diario local para acuarios. Registra la calidad del agua, los cambios de agua, la alimentación, el mantenimiento y las fotos con recordatorios y tendencias a largo plazo.",
+        clockDescription: "Un reloj flotante profesional para iOS con imagen en imagen, hora precisa, cuenta atrás y relojes mundiales.",
+        darkGridName: "Dark Grid - Espacio privado",
+        darkGridDescription: "Un espacio privado local protegido por contraseña. Gestiona fotos, vídeos, notas, grabaciones, captura a ciegas, cifrado opcional, exportación ZIP y copias entre dispositivos.",
+        privacyPolicy: "Política de privacidad", support: "Soporte", details: "Ver detalles", appStoreDownload: "Descargar en App Store",
+        notAvailable: "Próximamente", androidNotAvailable: "Android próximamente",
+        aboutTitle: "Acerca de Freedom Tools", aboutDescription: "Freedom Tools desarrolla aplicaciones móviles prácticas para facilitar el trabajo y la vida diaria.",
+        emailLabel: "Correo: somerking@foxmail.com", wechatLabel: "WeChat: somerking", qqLabel: "QQ: 274937420",
+        copy: "Copiar", copied: "Copiado", copyFailed: "Error al copiar", copyEmail: "Copiar correo", copyWechat: "Copiar ID de WeChat", copyQQ: "Copiar número QQ"
+      },
+      fr: {
+        pageTitle: "Freedom Tools | Des applications simples et utiles",
+        description: "Freedom Tools : applications mobiles simples et pages d’assistance.",
+        tagline: "Des applications simples, élégantes et utiles",
+        aquariumDescription: "Un journal d’aquarium local. Suivez la qualité de l’eau, les changements d’eau, le nourrissage, l’entretien et les photos grâce aux rappels et aux tendances à long terme.",
+        clockDescription: "Une horloge flottante professionnelle pour iOS avec affichage Picture in Picture, heure précise, compte à rebours et fuseaux horaires.",
+        darkGridName: "Dark Grid - Espace privé",
+        darkGridDescription: "Un espace privé local protégé par mot de passe. Gérez photos, vidéos, notes, enregistrements, capture discrète, chiffrement facultatif, export ZIP et sauvegardes entre appareils.",
+        privacyPolicy: "Politique de confidentialité", support: "Assistance", details: "Voir les détails", appStoreDownload: "Télécharger sur l’App Store",
+        notAvailable: "Bientôt disponible", androidNotAvailable: "Android bientôt disponible",
+        aboutTitle: "À propos de Freedom Tools", aboutDescription: "Freedom Tools crée des applications mobiles pratiques pour faciliter le travail et la vie quotidienne.",
+        emailLabel: "E-mail : somerking@foxmail.com", wechatLabel: "WeChat : somerking", qqLabel: "QQ : 274937420",
+        copy: "Copier", copied: "Copié", copyFailed: "Échec de la copie", copyEmail: "Copier l’e-mail", copyWechat: "Copier l’identifiant WeChat", copyQQ: "Copier le numéro QQ"
+      },
+      de: {
+        pageTitle: "Freedom Tools | Einfache und nützliche Apps",
+        description: "Freedom Tools: einfache mobile Apps und Support-Seiten.",
+        tagline: "Einfache, elegante und nützliche Apps",
+        aquariumDescription: "Ein lokales Aquarium-Tagebuch. Erfasse Wasserqualität, Wasserwechsel, Fütterung, Pflege und Fotos mit Erinnerungen und langfristigen Trends.",
+        clockDescription: "Eine professionelle schwebende Uhr für iOS mit Bild-in-Bild-Anzeige, genauer Uhrzeit, Countdown und Weltzeituhr.",
+        darkGridName: "Dark Grid - Privater Bereich",
+        darkGridDescription: "Ein lokaler, per Bereichspasswort geschützter privater Bereich. Verwalte Fotos, Videos, Notizen, Aufnahmen, Blindaufnahme, optionale Verschlüsselung, ZIP-Export und Gerätesicherungen.",
+        privacyPolicy: "Datenschutz", support: "Support", details: "Details ansehen", appStoreDownload: "Im App Store laden",
+        notAvailable: "Noch nicht verfügbar", androidNotAvailable: "Android folgt bald",
+        aboutTitle: "Über Freedom Tools", aboutDescription: "Freedom Tools entwickelt praktische mobile Apps, die Arbeit und Alltag erleichtern.",
+        emailLabel: "E-Mail: somerking@foxmail.com", wechatLabel: "WeChat: somerking", qqLabel: "QQ: 274937420",
+        copy: "Kopieren", copied: "Kopiert", copyFailed: "Kopieren fehlgeschlagen", copyEmail: "E-Mail kopieren", copyWechat: "WeChat-ID kopieren", copyQQ: "QQ-Nummer kopieren"
+      },
+      pt: {
+        pageTitle: "Freedom Tools | Aplicativos simples e úteis",
+        description: "Freedom Tools: aplicativos móveis simples e páginas de suporte.",
+        tagline: "Aplicativos simples, elegantes e úteis",
+        aquariumDescription: "Um diário local para aquários. Registre a qualidade da água, trocas de água, alimentação, manutenção e fotos com lembretes e tendências de longo prazo.",
+        clockDescription: "Um relógio flutuante profissional para iOS com Picture in Picture, hora precisa, contagens regressivas e relógios mundiais.",
+        darkGridName: "Dark Grid - Espaço privado",
+        darkGridDescription: "Um espaço privado local protegido por senha. Gerencie fotos, vídeos, notas, gravações, captura às cegas, criptografia opcional, exportação ZIP e backups entre dispositivos.",
+        privacyPolicy: "Política de privacidade", support: "Suporte", details: "Ver detalhes", appStoreDownload: "Baixar na App Store",
+        notAvailable: "Em breve", androidNotAvailable: "Android em breve",
+        aboutTitle: "Sobre a Freedom Tools", aboutDescription: "A Freedom Tools desenvolve aplicativos móveis práticos para facilitar o trabalho e a vida cotidiana.",
+        emailLabel: "E-mail: somerking@foxmail.com", wechatLabel: "WeChat: somerking", qqLabel: "QQ: 274937420",
+        copy: "Copiar", copied: "Copiado", copyFailed: "Falha ao copiar", copyEmail: "Copiar e-mail", copyWechat: "Copiar ID do WeChat", copyQQ: "Copiar número QQ"
+      },
+      ru: {
+        pageTitle: "Freedom Tools | Простые и полезные приложения",
+        description: "Freedom Tools: простые мобильные приложения и страницы поддержки.",
+        tagline: "Простые, элегантные и полезные приложения",
+        aquariumDescription: "Локальный журнал аквариума для любителей. Записывайте качество воды, подмены, кормление, обслуживание и фотографии с напоминаниями и долгосрочными тенденциями.",
+        clockDescription: "Профессиональные плавающие часы для iOS с режимом «картинка в картинке», точным временем, обратным отсчётом и мировыми часами.",
+        darkGridName: "Dark Grid - Личное пространство",
+        darkGridDescription: "Локальное личное пространство, защищённое паролем. Управляйте фото, видео, заметками, записями, скрытой съёмкой, шифрованием, экспортом ZIP и резервными копиями между устройствами.",
+        privacyPolicy: "Политика конфиденциальности", support: "Поддержка", details: "Подробнее", appStoreDownload: "Загрузить в App Store",
+        notAvailable: "Скоро будет доступно", androidNotAvailable: "Версия для Android скоро",
+        aboutTitle: "О Freedom Tools", aboutDescription: "Freedom Tools создаёт практичные мобильные приложения для работы и повседневной жизни.",
+        emailLabel: "Эл. почта: somerking@foxmail.com", wechatLabel: "WeChat: somerking", qqLabel: "QQ: 274937420",
+        copy: "Копировать", copied: "Скопировано", copyFailed: "Не удалось скопировать", copyEmail: "Скопировать почту", copyWechat: "Скопировать WeChat ID", copyQQ: "Скопировать номер QQ"
+      }
+    });
+
+    const languageKey = "freedom-tools-home-language";
+    const languageMeta = { zh: "zh-CN", en: "en", ja: "ja", ko: "ko", es: "es", fr: "fr", de: "de", pt: "pt", ru: "ru" };
+    const metaDescription = document.querySelector('meta[name="description"]');
+    const languageSelect = document.querySelector("#language-select");
+    let currentLanguage = "en";
+
+    function applyLanguage(language) {
+      const dictionary = translations[language] || translations.en;
+      currentLanguage = translations[language] ? language : "en";
+      document.documentElement.lang = languageMeta[currentLanguage];
+      document.title = dictionary.pageTitle;
+      metaDescription.setAttribute("content", dictionary.description);
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.dataset.i18n;
+        if (dictionary[key]) element.textContent = dictionary[key];
+      });
+      document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+        element.setAttribute("aria-label", dictionary[element.dataset.i18nAriaLabel]);
+      });
+      languageSelect.value = currentLanguage;
+      localStorage.setItem(languageKey, currentLanguage);
+    }
+
+    const savedLanguage = localStorage.getItem(languageKey);
+    const supportedLanguages = Object.keys(languageMeta);
+    const systemLanguage = (navigator.languages || [navigator.language || "en"]).map((locale) => locale.toLowerCase()).map((locale) => supportedLanguages.find((language) => locale.startsWith(language))).find(Boolean) || "en";
+    applyLanguage(savedLanguage || systemLanguage);
+    languageSelect.addEventListener("change", () => applyLanguage(languageSelect.value));
+
+    async function copyContact(button) {
+      const dictionary = translations[currentLanguage];
+      const value = button.dataset.copy;
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(value);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = value;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+          if (!document.execCommand("copy")) throw new Error("copy failed");
+          textarea.remove();
+        }
+        button.textContent = dictionary.copied;
+      } catch (error) {
+        button.textContent = dictionary.copyFailed;
+      }
+      window.setTimeout(() => { button.textContent = dictionary.copy; }, 1500);
+    }
+
+    document.querySelectorAll(".copy-button").forEach((button) => {
+      button.addEventListener("click", () => copyContact(button));
+    });
+  </script>
 </body>
-
 </html>

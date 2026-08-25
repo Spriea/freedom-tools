@@ -25,6 +25,8 @@ body {
 .hero p { margin: 0; color: var(--muted); font-size: clamp(18px, 3vw, 20px); }
 
 .language-switch { position: absolute; top: 0; right: 0; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; }
+.language-label { display: inline-flex; align-items: center; gap: 5px; }
+.language-label svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
 .language-switch select { padding: 7px 30px 7px 10px; border: 1px solid #cbd5e1; border-radius: 10px; color: var(--text); background: var(--surface); font: inherit; }
 .language-switch select:focus-visible, .button:focus-visible, .copy-button:focus-visible { outline: 3px solid rgba(40, 101, 200, .25); outline-offset: 2px; }
 
@@ -54,7 +56,8 @@ body {
   .hero h1 { margin: 16px 0 10px; font-size: 32px; }
   .hero p { font-size: 16px; }
   .language-switch { position: static; justify-content: flex-end; margin-bottom: 6px; }
-  .language-switch span { display: none; }
+  .language-label { gap: 4px; font-size: 12px; }
+  .language-label svg { width: 14px; height: 14px; }
   .language-switch select { padding: 6px 28px 6px 9px; font-size: 13px; }
 
   .card { margin: 12px 0; padding: 16px; border-radius: 18px; }

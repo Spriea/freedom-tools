@@ -61,6 +61,7 @@ li {
 <body>
 
 <div class="container">
+<nav class="card"><a href="./">产品主页 / Product</a> · <a href="./privacy.html">隐私政策 / Privacy</a> · <a href="../../">关于我们 / About</a></nav>
 
 <div class="card">
 
@@ -103,88 +104,32 @@ li {
 
 
 <div class="card">
+<h2>常见问题 / FAQ</h2>
 
-<h2>
-常见问题 / FAQ
-</h2>
+<h3>1. 如何开启画中画悬浮时钟？ / How do I start Picture in Picture?</h3>
+<p>在 App 首页点击“开启悬浮”按钮。请保持 App 在前台，等待画中画窗口出现后再切换到其他 App。<br>Tap “Start Floating Clock” on the home screen. Keep the app in the foreground until the Picture in Picture window appears.</p>
 
+<h3>2. 为什么悬浮窗口没有出现？ / Why did the floating window not appear?</h3>
+<ul><li>确认设备和系统支持 Picture in Picture。</li><li>如果已有画中画窗口，请先关闭后重试。</li><li>返回 App 前台再次点击；仍无效时重启 App 或设备。</li><li>Make sure Picture in Picture is supported, close any existing PiP window, retry in the foreground, and restart the app or device if needed.</li></ul>
 
-<h3>
-1. 如何开启悬浮时钟？
-</h3>
+<h3>3. 时间校准和平台访问延迟有什么区别？ / What is the difference between calibration and platform latency?</h3>
+<p>时间校准优先使用 NTP 标准网络时间估算设备时间偏差；平台访问延迟只检测当前设备访问所选平台公开 HTTPS 地址的耗时，不参与时间偏差计算，也不代表平台交易服务器时间。<br>Calibration uses NTP standard network time to estimate device-time deviation. Platform access latency only measures access to a public HTTPS address and does not affect calibration or represent transaction-server time.</p>
 
-<p>
-打开 App 后进入悬浮时钟设置，根据提示开启画中画（Picture-in-Picture）功能即可。
-</p>
+<h3>4. 为什么显示网络波动或备用校时？ / Why does the app show network fluctuation or backup calibration?</h3>
+<p>网络延迟较高、有效测量不足或不同结果差异较大时，App 会标记网络波动并尽量保留上次有效校准。当前网络无法使用 NTP 时，可能启用精度较低的 HTTPS 备用校时。<br>High latency or inconsistent measurements can trigger a network-fluctuation state. The app keeps the last valid calibration when possible and may use a less accurate HTTPS fallback if NTP is unavailable.</p>
 
+<h3>5. 如何恢复 Pro 购买？ / How do I restore Pro?</h3>
+<p>打开 Pro 解锁页面并点击“恢复购买”，系统会通过当前 Apple ID 查询已购买权益。<br>Open the Pro page and tap “Restore Purchases” to check entitlement for the current Apple ID.</p>
 
-<h3>
-2. 为什么悬浮窗口无法显示？
-</h3>
+<h3>6. 卸载重装会重新开始试用吗？ / Does reinstalling restart the trial?</h3>
+<p>通常不会。试用保护记录保存在 iOS Keychain 中，普通卸载通常不会清除。<br>Usually no. Trial-protection records are stored in iOS Keychain and ordinarily survive an uninstall.</p>
 
-<ul>
-<li>
-请确认设备支持 Picture-in-Picture 功能。
-</li>
-
-<li>
-请确认 App 已获得系统允许。
-</li>
-
-<li>
-部分 iPad 或旧设备可能存在系统限制。
-</li>
-</ul>
-
-
-<h3>
-3. 如何恢复 Pro 购买？
-</h3>
-
-<p>
-进入 App 设置页面，点击「恢复购买」，
-系统会通过 Apple ID 自动恢复已购买权益。
-</p>
-
-
-<h3>
-4. 卸载重新安装后试用是否重新开始？
-</h3>
-
-<p>
-不会。
-试用状态保存在 iOS Keychain 中，
-普通卸载不会清除试用记录。
-</p>
-
-
-<h3>
-5. 服务器校时为什么失败？
-</h3>
-
-<ul>
-<li>
-请检查网络连接。
-</li>
-
-<li>
-部分网站可能限制访问频率。
-</li>
-
-<li>
-网络异常时 App 会自动回退使用设备时间。
-</li>
-</ul>
-
-
+<h3>7. App 会播放后台音频吗？ / Does the app play background audio?</h3>
+<p>不会。画中画只显示时钟画面，App 不播放静音音频或其他有声内容。<br>No. Picture in Picture displays the clock only; the app does not play silent audio or audible content.</p>
 </div>
 
-
-
 <div class="card">
-
-<h2>
-版本信息 / Version
+<h2>版本信息 / Version
 </h2>
 
 <p>

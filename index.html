@@ -14,6 +14,7 @@
         <span class="language-label"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21M12 3C9.6 5.5 8.4 8.5 8.4 12S9.6 18.5 12 21"></path></svg>Language</span>
         <select id="language-select" aria-label="Language / 语言">
           <option value="zh">中文</option>
+          <option value="zh-TW">繁體中文</option>
           <option value="en">English</option>
           <option value="ja">日本語</option>
           <option value="ko">한국어</option>
@@ -80,6 +81,19 @@
         </div>
       </article>
 
+      <article class="card app">
+        <img class="icon" src="./assets/item-keeper.png" alt="物品志应用图标" width="100" height="100">
+        <div>
+          <h2 data-i18n="itemKeeperName">物品志</h2>
+          <p data-i18n="itemKeeperDescription">本地优先的个人物品管理工具。记录每件物品、数量、状态和收纳位置，通过搜索与完整位置路径快速找到东西，并支持封面照片、备份和导出。</p>
+          <div class="store-actions">
+            <a class="button" href="./apps/item-keeper/" data-i18n="details">查看详情</a>
+            <span class="button unavailable" role="status" data-i18n="notAvailable">暂未上线</span>
+            <span class="button unavailable" role="status" data-i18n="androidNotAvailable">Android 敬请期待</span>
+          </div>
+        </div>
+      </article>
+
       <section class="card about">
         <h2 data-i18n="aboutTitle">关于 Freedom Tools</h2>
         <p data-i18n="aboutDescription">Freedom Tools 专注开发移动端效率工具，帮助用户提升工作和生活效率。</p>
@@ -115,6 +129,8 @@
         darkGridDescription: "使用空间密码保护的本地私人空间。支持照片、视频、笔记、清晰录音、盲拍、可选加密、ZIP 导出和跨设备备份。",
         renovationName: "装修防超支",
         renovationDescription: "集中管理装修预算、付款、增项与付款计划，并通过报价对比、验收和资料留档减少超支与遗漏。",
+        itemKeeperName: "物品志",
+        itemKeeperDescription: "本地优先的个人物品管理工具。记录每件物品、数量、状态和收纳位置，通过搜索与完整位置路径快速找到东西，并支持封面照片、备份和导出。",
         privacyPolicy: "隐私政策",
         support: "技术支持",
         details: "查看详情",
@@ -143,6 +159,8 @@
         darkGridDescription: "A local private space protected by a space password. Manage photos, videos, notes, clear recordings, blind capture, optional encryption, ZIP export, and device-to-device backups.",
         renovationName: "Renovation Budget Guard",
         renovationDescription: "Manage renovation budgets, payments, extra costs, and payment plans, with quote comparison, acceptance records, and organized project documents.",
+        itemKeeperName: "Item Keeper",
+        itemKeeperDescription: "A local-first personal inventory app. Record items, quantities, status, and storage locations, then find anything quickly with search and full location paths. Includes cover photos, backup, and export.",
         privacyPolicy: "Privacy Policy",
         support: "Support",
         details: "View Details",
@@ -174,6 +192,8 @@
         darkGridDescription: "スペースパスワードで保護されたローカルプライベートスペース。写真、動画、メモ、録音、ブラインド撮影、暗号化、ZIP 書き出し、端末間バックアップに対応します。",
         renovationName: "リフォーム予算管理",
         renovationDescription: "リフォームの予算、支払い、追加費用、支払い予定をまとめ、見積比較、検収、資料保存で超過や漏れを防ぎます。",
+        itemKeeperName: "物品帳",
+        itemKeeperDescription: "ローカルファーストの持ち物管理アプリ。物品、数量、状態、保管場所を記録し、検索と完全な場所パスですぐに見つけられます。カバー写真、バックアップ、書き出しにも対応します。",
         privacyPolicy: "プライバシーポリシー", support: "サポート", details: "詳細を見る", appStoreDownload: "App Store からダウンロード",
         notAvailable: "近日公開", androidNotAvailable: "Android 版は近日公開",
         aboutTitle: "Freedom Tools について", aboutDescription: "Freedom Tools は、仕事や日常を便利にする実用的なモバイルアプリを開発しています。",
@@ -190,6 +210,8 @@
         darkGridDescription: "공간 비밀번호로 보호되는 로컬 개인 공간입니다. 사진, 동영상, 메모, 녹음, 블라인드 촬영, 암호화, ZIP 내보내기와 기기 간 백업을 지원합니다.",
         renovationName: "인테리어 예산·견적 관리",
         renovationDescription: "인테리어 예산, 결제, 추가 비용과 결제 계획을 관리하고 견적 비교, 검수, 자료 보관으로 초과 지출과 누락을 줄입니다.",
+        itemKeeperName: "물건노트",
+        itemKeeperDescription: "로컬 우선 개인 물건 관리 앱입니다. 물건, 수량, 상태와 보관 위치를 기록하고 검색과 전체 위치 경로로 빠르게 찾을 수 있습니다. 표지 사진, 백업과 내보내기도 지원합니다.",
         privacyPolicy: "개인정보 처리방침", support: "지원", details: "자세히 보기", appStoreDownload: "App Store에서 다운로드",
         notAvailable: "출시 예정", androidNotAvailable: "Android 버전 출시 예정",
         aboutTitle: "Freedom Tools 소개", aboutDescription: "Freedom Tools는 업무와 일상을 더 편리하게 만드는 실용적인 모바일 앱을 개발합니다.",
@@ -206,6 +228,8 @@
         darkGridDescription: "Un espacio privado local protegido por contraseña. Gestiona fotos, vídeos, notas, grabaciones, captura a ciegas, cifrado opcional, exportación ZIP y copias entre dispositivos.",
         renovationName: "Reforma: Presupuesto y Gastos",
         renovationDescription: "Gestiona presupuestos, pagos, costes extra y planes de pago, con comparación de presupuestos, inspecciones y documentos del proyecto.",
+        itemKeeperName: "Mis Objetos",
+        itemKeeperDescription: "Un inventario personal que funciona de forma local. Registra objetos, cantidades, estados y ubicaciones, y encuentra cualquier cosa con búsqueda y rutas completas. Incluye fotos, copias y exportación.",
         privacyPolicy: "Política de privacidad", support: "Soporte", details: "Ver detalles", appStoreDownload: "Descargar en App Store",
         notAvailable: "Próximamente", androidNotAvailable: "Android próximamente",
         aboutTitle: "Acerca de Freedom Tools", aboutDescription: "Freedom Tools desarrolla aplicaciones móviles prácticas para facilitar el trabajo y la vida diaria.",
@@ -222,6 +246,8 @@
         darkGridDescription: "Un espace privé local protégé par mot de passe. Gérez photos, vidéos, notes, enregistrements, capture discrète, chiffrement facultatif, export ZIP et sauvegardes entre appareils.",
         renovationName: "Budget Rénovation & Devis",
         renovationDescription: "Gérez budgets, paiements, suppléments et échéances, avec comparaison des devis, réceptions et classement des documents.",
+        itemKeeperName: "Carnet d'objets",
+        itemKeeperDescription: "Un inventaire personnel local. Enregistrez objets, quantités, états et emplacements, puis retrouvez tout grâce à la recherche et aux chemins complets. Inclut photos, sauvegarde et export.",
         privacyPolicy: "Politique de confidentialité", support: "Assistance", details: "Voir les détails", appStoreDownload: "Télécharger sur l’App Store",
         notAvailable: "Bientôt disponible", androidNotAvailable: "Android bientôt disponible",
         aboutTitle: "À propos de Freedom Tools", aboutDescription: "Freedom Tools crée des applications mobiles pratiques pour faciliter le travail et la vie quotidienne.",
@@ -238,6 +264,8 @@
         darkGridDescription: "Ein lokaler, per Bereichspasswort geschützter privater Bereich. Verwalte Fotos, Videos, Notizen, Aufnahmen, Blindaufnahme, optionale Verschlüsselung, ZIP-Export und Gerätesicherungen.",
         renovationName: "Renovierungsbudget & Kosten",
         renovationDescription: "Verwalte Budget, Zahlungen, Zusatzkosten und Zahlungspläne sowie Angebotsvergleiche, Abnahmen und Projektdokumente.",
+        itemKeeperName: "Dingbuch",
+        itemKeeperDescription: "Eine lokale Verwaltung persönlicher Gegenstände. Erfasse Dinge, Mengen, Status und Aufbewahrungsorte und finde alles über Suche und vollständige Ortspfade. Mit Titelbildern, Sicherung und Export.",
         privacyPolicy: "Datenschutz", support: "Support", details: "Details ansehen", appStoreDownload: "Im App Store laden",
         notAvailable: "Noch nicht verfügbar", androidNotAvailable: "Android folgt bald",
         aboutTitle: "Über Freedom Tools", aboutDescription: "Freedom Tools entwickelt praktische mobile Apps, die Arbeit und Alltag erleichtern.",
@@ -254,6 +282,8 @@
         darkGridDescription: "Um espaço privado local protegido por senha. Gerencie fotos, vídeos, notas, gravações, captura às cegas, criptografia opcional, exportação ZIP e backups entre dispositivos.",
         renovationName: "Orçamento de Reforma",
         renovationDescription: "Gerencie orçamento, pagamentos, custos extras e planos de pagamento, com comparação de propostas, inspeções e documentos do projeto.",
+        itemKeeperName: "Item Keeper",
+        itemKeeperDescription: "Um inventário pessoal que funciona localmente. Registre itens, quantidades, estados e locais e encontre tudo com pesquisa e caminhos completos. Inclui fotos, backup e exportação.",
         privacyPolicy: "Política de privacidade", support: "Suporte", details: "Ver detalhes", appStoreDownload: "Baixar na App Store",
         notAvailable: "Em breve", androidNotAvailable: "Android em breve",
         aboutTitle: "Sobre a Freedom Tools", aboutDescription: "A Freedom Tools desenvolve aplicativos móveis práticos para facilitar o trabalho e a vida cotidiana.",
@@ -270,6 +300,8 @@
         darkGridDescription: "Локальное личное пространство, защищённое паролем. Управляйте фото, видео, заметками, записями, скрытой съёмкой, шифрованием, экспортом ZIP и резервными копиями между устройствами.",
         renovationName: "Бюджет ремонта",
         renovationDescription: "Управляйте бюджетом, платежами, доплатами и планами оплаты, сравнивайте сметы и храните акты и документы проекта.",
+        itemKeeperName: "Item Keeper",
+        itemKeeperDescription: "Локальный учёт личных вещей. Записывайте предметы, количество, статус и места хранения, а затем быстро находите всё через поиск и полные пути. Поддерживаются фото, резервные копии и экспорт.",
         privacyPolicy: "Политика конфиденциальности", support: "Поддержка", details: "Подробнее", appStoreDownload: "Загрузить в App Store",
         notAvailable: "Скоро будет доступно", androidNotAvailable: "Версия для Android скоро",
         aboutTitle: "О Freedom Tools", aboutDescription: "Freedom Tools создаёт практичные мобильные приложения для работы и повседневной жизни.",
@@ -278,8 +310,28 @@
       }
     });
 
+    translations["zh-TW"] = {
+      ...translations.zh,
+      pageTitle: "Freedom Tools｜簡單、優雅、實用的應用程式",
+      description: "Freedom Tools：簡單、優雅、實用的行動應用程式與產品支援頁面。",
+      tagline: "打造簡單、優雅、實用的應用程式",
+      aquariumDescription: "為水族愛好者設計的本機魚缸日誌。記錄水質、換水、餵食、維護與照片，透過提醒和長期趨勢掌握魚缸變化。",
+      clockDescription: "專業的 iOS 懸浮時鐘工具，支援子母畫面、精準時間、倒數計時和世界時鐘。",
+      darkGridName: "暗格 - 私密空間",
+      darkGridDescription: "以空間密碼保護的本機私人空間，支援照片、影片、備註、錄音、盲拍、選用加密、ZIP 匯出和跨裝置備份。",
+      renovationName: "裝修防超支",
+      renovationDescription: "集中管理裝修預算、付款、增項與付款計畫，透過報價比較、驗收和資料留存減少超支與遺漏。",
+      itemKeeperName: "物品誌",
+      itemKeeperDescription: "本機優先的個人物品管理工具。記錄物品、數量、狀態和收納位置，透過搜尋與完整位置路徑快速找到東西，並支援封面照片、備份與匯出。",
+      privacyPolicy: "隱私權政策", support: "技術支援", details: "查看詳情", appStoreDownload: "App Store 下載",
+      notAvailable: "尚未推出", androidNotAvailable: "Android 敬請期待",
+      aboutTitle: "關於 Freedom Tools", aboutDescription: "Freedom Tools 專注開發實用的行動效率工具，讓工作與生活更便利。",
+      emailLabel: "電子郵件：somerking@foxmail.com", wechatLabel: "WeChat：somerking", qqLabel: "QQ：274937420",
+      copy: "複製", copied: "已複製", copyFailed: "複製失敗", copyEmail: "複製電子郵件", copyWechat: "複製 WeChat ID", copyQQ: "複製 QQ 號碼"
+    };
+
     const languageKey = "freedom-tools-home-language";
-    const languageMeta = { zh: "zh-CN", en: "en", ja: "ja", ko: "ko", es: "es", fr: "fr", de: "de", pt: "pt", ru: "ru" };
+    const languageMeta = { zh: "zh-CN", "zh-TW": "zh-TW", en: "en", ja: "ja", ko: "ko", es: "es", fr: "fr", de: "de", pt: "pt", ru: "ru" };
     const metaDescription = document.querySelector('meta[name="description"]');
     const languageSelect = document.querySelector("#language-select");
     let currentLanguage = "en";

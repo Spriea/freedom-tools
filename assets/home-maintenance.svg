@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">Home Maintenance</title>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11998e"/><stop offset="1" stop-color="#087b75"/></linearGradient></defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#g)"/>
+  <path d="M205 490 512 235l307 255v306a54 54 0 0 1-54 54H259a54 54 0 0 1-54-54Z" fill="#fff" opacity=".96"/>
+  <path d="M635 451a132 132 0 0 0-156 171L328 773l76 76 151-151a132 132 0 0 0 171-156l-87 87-79-20-20-79Z" fill="#087b75"/>
+</svg>

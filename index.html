@@ -106,6 +106,18 @@
         </div>
       </article>
 
+      <article class="card app">
+        <img class="icon" src="./assets/roadcost.png" alt="RoadCost 应用图标" width="100" height="100">
+        <div>
+          <h2 data-i18n="roadCostName">自驾记 - GPS轨迹与花费</h2>
+          <p data-i18n="roadCostDescription">记录自驾行程的 GPS 轨迹、里程与旅行花费，让每一次出行都清楚可查。</p>
+          <div class="store-actions">
+            <a class="button" href="./apps/road-cost/" data-i18n="details">查看详情</a>
+            <span class="button unavailable" role="status" data-i18n="notAvailable">暂未上线</span>
+          </div>
+        </div>
+      </article>
+
       <section class="card about">
         <h2 data-i18n="aboutTitle">关于 Freedom Tools</h2>
         <p data-i18n="aboutDescription">Freedom Tools 专注开发移动端效率工具，帮助用户提升工作和生活效率。</p>
@@ -145,6 +157,8 @@
         itemKeeperDescription: "本地优先的个人物品管理工具。记录每件物品、数量、状态和收纳位置，通过搜索与完整位置路径快速找到东西，并支持封面照片、备份和导出。",
         homeMaintenanceName: "家庭维护",
         homeMaintenanceDescription: "本地优先的家庭设备档案。记录设备、维护历史、保修、计划与照片，并支持备份及专业导出。",
+        roadCostName: "自驾记 - GPS轨迹与花费",
+        roadCostDescription: "记录自驾行程的 GPS 轨迹、里程与旅行花费，让每一次出行都清楚可查。",
         privacyPolicy: "隐私政策",
         support: "技术支持",
         details: "查看详情",
@@ -177,6 +191,8 @@
         itemKeeperDescription: "A local-first personal inventory app. Record items, quantities, status, and storage locations, then find anything quickly with search and full location paths. Includes cover photos, backup, and export.",
         homeMaintenanceName: "Home Maintenance",
         homeMaintenanceDescription: "A local-first home asset record for appliances, maintenance history, warranties, plans, and photos, with backup and professional export.",
+        roadCostName: "RoadCost",
+        roadCostDescription: "Track GPS routes, mileage, and travel expenses for every road trip in one clear record.",
         privacyPolicy: "Privacy Policy",
         support: "Support",
         details: "View Details",
@@ -361,6 +377,21 @@
       emailLabel: "電子郵件：somerking@foxmail.com", wechatLabel: "WeChat：somerking", qqLabel: "QQ：274937420",
       copy: "複製", copied: "已複製", copyFailed: "複製失敗", copyEmail: "複製電子郵件", copyWechat: "複製 WeChat ID", copyQQ: "複製 QQ 號碼"
     };
+
+    const roadCostTranslations = {
+      ja: ["RoadCost", "ドライブごとの GPS ルート、走行距離、旅行費用を分かりやすく記録します。"],
+      ko: ["RoadCost", "모든 드라이브의 GPS 경로, 주행 거리와 여행 비용을 한곳에 명확하게 기록합니다."],
+      es: ["RoadCost", "Registra con claridad las rutas GPS, el kilometraje y los gastos de cada viaje por carretera."],
+      fr: ["RoadCost", "Consignez clairement les trajets GPS, le kilométrage et les dépenses de chaque voyage."],
+      de: ["RoadCost", "Erfasse GPS-Routen, Kilometerstände und Reisekosten jeder Fahrt übersichtlich an einem Ort."],
+      pt: ["RoadCost", "Registre com clareza rotas GPS, quilometragem e despesas de cada viagem de carro."],
+      ru: ["RoadCost", "Сохраняйте GPS-маршруты, пробег и расходы каждой поездки в понятной записи."],
+      "zh-TW": ["自駕記 - GPS 軌跡與花費", "記錄自駕行程的 GPS 軌跡、里程與旅行花費，讓每一次出行都清楚可查。"]
+    };
+    Object.entries(roadCostTranslations).forEach(([language, values]) => {
+      translations[language].roadCostName = values[0];
+      translations[language].roadCostDescription = values[1];
+    });
 
     const languageKey = "freedom-tools-home-language";
     const languageMeta = { zh: "zh-CN", "zh-TW": "zh-TW", en: "en", ja: "ja", ko: "ko", es: "es", fr: "fr", de: "de", pt: "pt", ru: "ru" };

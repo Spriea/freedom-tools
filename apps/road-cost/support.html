@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light dark"><title>自驾记｜技术支持</title><style>
+:root{--brand:#1F8F6E;--bg:#f7f8f7;--card:#fff;--text:#1f2523;--muted:#68716e;--border:#e4e9e6;--soft:#eef7f3}
+@media(prefers-color-scheme:dark){:root{--bg:#111513;--card:#191e1b;--text:#eef4f1;--muted:#a5afaa;--border:#2b332f;--soft:#16241f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;line-height:1.7}
+.wrap{max-width:880px;margin:auto;padding:28px 18px 56px}.hero,.card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:22px 20px;margin:14px 0}
+.hero{background:linear-gradient(145deg,var(--soft),var(--card));border-radius:28px}h1{font-size:30px;margin:0 0 8px}h2{font-size:21px;margin:0 0 10px}h3{font-size:17px;margin:18px 0 8px}
+p{margin:8px 0}ul{padding-left:22px}.muted{color:var(--muted)}a{color:var(--brand);text-decoration:none}.toolbar{display:flex;gap:10px;margin:16px 0}
+button{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:999px;padding:9px 14px}button.active{background:var(--brand);color:white;border-color:var(--brand)}
+.note{background:var(--soft);padding:12px 14px;border-radius:12px;color:var(--muted)}footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px}[data-lang="en"]{display:none}
+</style><link rel="stylesheet" href="../../assets/contact.css"></head><body><main class="wrap">
+<section class="hero"><h1 data-lang="zh">自驾记｜技术支持</h1><h1 data-lang="en">RoadCost | Technical Support</h1><p class="muted" data-lang="zh">GPS 轨迹、里程、花费、恢复、备份相关问题都可以在这里获得帮助。</p><p class="muted" data-lang="en">Help with GPS tracking, mileage, expenses, recovery, backup, and more.</p></section>
+<div class="toolbar"><button id="btnZh" onclick="setLang('zh')">中文</button><button id="btnEn" onclick="setLang('en')">English</button></div>
+
+<section class="card" data-lang="zh"><h2>联系我们</h2><div class="contact-list"><div class="contact-item"><span class="contact-label">邮箱</span><a class="contact-value" href="mailto:somerking@foxmail.com">somerking@foxmail.com</a><button class="contact-copy" type="button" data-copy="somerking@foxmail.com">复制</button></div><div class="contact-item"><span class="contact-label">WeChat</span><span class="contact-value">somerking</span><button class="contact-copy" type="button" data-copy="somerking">复制</button></div><div class="contact-item"><span class="contact-label">QQ</span><span class="contact-value">274937420</span><button class="contact-copy" type="button" data-copy="274937420">复制</button></div></div><p class="muted">建议邮件附上设备型号、系统版本、App 版本、问题发生时间和复现步骤。</p></section>
+<section class="card" data-lang="en"><h2>Contact Support</h2><div class="contact-list"><div class="contact-item"><span class="contact-label">Email</span><a class="contact-value" href="mailto:somerking@foxmail.com">somerking@foxmail.com</a><button class="contact-copy" type="button" data-copy="somerking@foxmail.com">Copy</button></div><div class="contact-item"><span class="contact-label">WeChat</span><span class="contact-value">somerking</span><button class="contact-copy" type="button" data-copy="somerking">Copy</button></div><div class="contact-item"><span class="contact-label">QQ</span><span class="contact-value">274937420</span><button class="contact-copy" type="button" data-copy="274937420">Copy</button></div></div><p class="muted">Please include device model, OS version, app version, approximate issue time, and reproduction steps.</p></section>
+
+<section class="card" data-lang="zh"><h2>常见问题</h2>
+<h3>为什么需要定位权限？</h3><p>用于记录 GPS 路线和计算里程。若希望锁屏或后台继续记录，需要允许相应的后台定位权限。</p>
+<h3>为什么重开 App 后显示“轨迹记录已停止”？</h3><p>如果 App 被系统终止、手动关闭或定位中断，行程本身仍会保留。重新打开后可以恢复轨迹记录，已保存里程不会自动清零。</p>
+<h3>为什么隧道中的里程可能少一些？</h3><p>隧道、地下车库等环境可能暂时没有 GPS。为了避免巨大跳点和虚假里程，自驾记可能忽略长时间定位中断期间的跨段距离。</p>
+<h3>为什么停车时可能有少量里程变化？</h3><p>GPS 静止时也可能漂移。App 会过滤短距离和低质量定位，但复杂环境下仍可能有少量误差。</p>
+<h3>结束行程后还会继续定位吗？</h3><p>结束行程后会停止本次持续轨迹记录。系统可能仍展示近期定位使用记录，但 App 不应继续为已结束行程写入轨迹。</p>
+<h3>如何查看路线回放、海拔或多行程对比？</h3><p>进入行程地图后，可使用回放、海拔和叠加功能。没有轨迹的行程不会提供回放或海拔数据；回放与海拔面板不能同时开启。</p>
+<h3>地图位置为什么会有偏差？</h3><p>App 可切换高德矢量、高德卫星和 OpenStreetMap。不同地图使用的坐标参考不同，App 会在绘制时转换坐标；请先确认当前地图源及设备定位是否正常。</p>
+<h3>数据保存在哪里？</h3><p>当前版本的核心行程、花费和轨迹数据主要保存在设备本地。你可以主动创建备份或导出报告。</p>
+<h3>如何备份、恢复或导出 PDF？</h3><p>在“我的”中进入“备份恢复”，可导出或导入本地 ZIP。导入时可选择合并或替换；PDF 报告通过系统分享面板保存或发送。</p>
+<h3>删除 App 后还能恢复吗？</h3><p>如果没有提前备份，删除 App 可能同时删除本地应用数据。卸载前建议先创建备份。</p>
+</section>
+
+<section class="card" data-lang="en"><h2>Frequently Asked Questions</h2>
+<h3>Why is location permission required?</h3><p>It is used to record GPS routes and calculate mileage. Background permission is needed if you want an active trip to continue recording while the app is backgrounded or the screen is locked.</p>
+<h3>Why does the app show “Tracking stopped” after reopening?</h3><p>If the app is terminated, closed manually, or tracking is interrupted, the trip remains saved. You can recover tracking after reopening, and saved mileage is preserved.</p>
+<h3>Why might tunnel mileage be lower?</h3><p>GPS may be unavailable in tunnels or underground parking. To avoid false jumps, RoadCost may exclude distance across long GPS gaps.</p>
+<h3>Why can mileage change slightly while parked?</h3><p>GPS may drift while stationary. RoadCost filters short movements and poor locations, but small inaccuracies can still occur.</p>
+<h3>Does location tracking continue after completing a trip?</h3><p>No continuous tracking should continue for the completed trip. The operating system may still show recent location use.</p>
+<h3>How do I use replay, elevation, or trip overlays?</h3><p>Open a trip map and use the replay, elevation, or overlay controls. Trips without tracks have no replay or elevation data; replay and elevation cannot be open together.</p>
+<h3>Why can a map position look offset?</h3><p>RoadCost can switch between AMap vector, AMap satellite, and OpenStreetMap. Different map sources use different coordinate references, which the app converts while drawing. Check the selected source and device location first.</p>
+<h3>Where is my data stored?</h3><p>Core trip, expense, and route data is primarily stored locally on your device. You may create backups or export reports.</p>
+<h3>How do I back up, restore, or export a PDF?</h3><p>Open Backup & Restore from Profile to export or import a local ZIP. Imports can merge or replace data; PDF reports are saved or sent through the system share sheet.</p>
+<h3>Can I recover data after deleting the app?</h3><p>Without a prior backup, deleting the app may remove locally stored app data. Create a backup before uninstalling.</p>
+</section>
+
+<section class="card" data-lang="zh"><h2>系统支持</h2><p>平台：iPhone / iPad</p><p>最低系统版本：iOS 15.0</p></section>
+<section class="card" data-lang="en"><h2>Platform Support</h2><p>Platforms: iPhone / iPad</p><p>Minimum system version: iOS 15.0</p></section>
+
+<section class="card" data-lang="zh"><h2>隐私</h2><p>请查看 <a href="./privacy.html">隐私政策</a>。</p></section>
+<section class="card" data-lang="en"><h2>Privacy</h2><p>See our <a href="./privacy.html">Privacy Policy</a>.</p></section>
+
+<footer>© 2026 RoadCost / 自驾记</footer></main>
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-lang]').forEach(e=>e.style.display=e.dataset.lang===lang?'':'none');
+  document.getElementById('btnZh').classList.toggle('active',lang==='zh');
+  document.getElementById('btnEn').classList.toggle('active',lang==='en');
+  document.documentElement.lang=lang==='zh'?'zh-CN':'en';
+}
+const zh=(navigator.language||'').toLowerCase().startsWith('zh'); setLang(zh?'zh':'en');
+</script><script src="../../assets/contact.js"></script>
+</body></html>

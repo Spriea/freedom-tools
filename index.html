@@ -31,9 +31,9 @@
 
     <main>
       <article class="card app">
-        <img class="icon" src="./apps/yixiu-tools/app-icon.png" alt="一休工具应用图标" width="100" height="100">
-        <div><h2>一休工具</h2><p>100+ 个工具、14 类场景，一站处理图片、PDF、文字识别、照片清理与日常小事，核心处理在设备本地完成。</p>
-          <div class="store-actions"><a class="button" href="./apps/yixiu-tools/" data-i18n="details">查看详情</a><a class="button store" href="https://apps.apple.com/app/id6817578515" target="_blank" rel="noopener">App Store 下载</a></div>
+        <img class="icon" src="./apps/yixiu-tools/app-icon.png" alt="一休工具" data-i18n-alt="yixiuName" width="100" height="100">
+        <div><h2 data-i18n="yixiuName">一休工具</h2><p data-i18n="yixiuDescription">167 个工具、16 个分类，涵盖图片、PDF、扫描识字、照片整理、音视频、记录提醒与日常实用功能。</p>
+          <div class="store-actions"><a class="button" id="yixiu-details" href="./apps/yixiu-tools/" data-i18n="details">查看详情</a><a class="button store" href="https://apps.apple.com/app/id6817578515" target="_blank" rel="noopener" data-i18n="appStoreDownload">App Store 下载</a></div>
         </div>
       </article>
 
@@ -159,6 +159,7 @@
     <footer class="footer">© 2026 Freedom Tools</footer>
   </div>
 
+  <script src="./apps/yixiu-tools/content.js"></script>
   <script>
     const translations = {
       zh: {
@@ -411,6 +412,15 @@
       translations[language].roadCostDescription = values[1];
     });
 
+    Object.entries(translations).forEach(([language, dictionary]) => {
+      const appLanguage = language === 'zh' ? 'zh-Hans' : language === 'zh-TW' ? 'zh-Hant' : language;
+      const app = window.YixiuContent[appLanguage] || window.YixiuContent.en;
+      dictionary.yixiuName = app.name;
+      dictionary.yixiuDescription = app.summary;
+    });
+    translations.pt.yixiuDescription = '167 ferramentas em 16 categorias para imagens, PDFs, reconhecimento de texto, fotos, áudio e vídeo, lembretes e tarefas do dia a dia.';
+    translations.ru.yixiuDescription = '167 инструментов в 16 категориях для изображений, PDF, распознавания текста, фотографий, аудио и видео, напоминаний и повседневных задач.';
+
     const languageKey = "freedom-tools-home-language";
     const languageMeta = { zh: "zh-CN", "zh-TW": "zh-TW", en: "en", ja: "ja", ko: "ko", es: "es", fr: "fr", de: "de", pt: "pt", ru: "ru" };
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -431,13 +441,19 @@
       document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
         element.setAttribute("aria-label", dictionary[element.dataset.i18nAriaLabel]);
       });
+      document.querySelector('[data-i18n-alt="yixiuName"]').alt = dictionary.yixiuName;
+      const appLanguage = currentLanguage === 'zh' ? 'zh-Hans' : currentLanguage === 'zh-TW' ? 'zh-Hant' : currentLanguage;
+      document.querySelector('#yixiu-details').href = './apps/yixiu-tools/?lang=' + (window.YixiuContent[appLanguage] ? appLanguage : 'en');
       languageSelect.value = currentLanguage;
       localStorage.setItem(languageKey, currentLanguage);
     }
 
     const savedLanguage = localStorage.getItem(languageKey);
     const supportedLanguages = Object.keys(languageMeta);
-    const systemLanguage = (navigator.languages || [navigator.language || "en"]).map((locale) => locale.toLowerCase()).map((locale) => supportedLanguages.find((language) => locale.startsWith(language))).find(Boolean) || "en";
+    const systemLanguage = (navigator.languages || [navigator.language || "en"]).map((locale) => {
+      if (/^zh/i.test(locale)) return /Hant|TW|HK|MO/i.test(locale) ? 'zh-TW' : 'zh';
+      return supportedLanguages.find((language) => locale.toLowerCase().startsWith(language.toLowerCase()));
+    }).find(Boolean) || "en";
     applyLanguage(savedLanguage || systemLanguage);
     languageSelect.addEventListener("change", () => applyLanguage(languageSelect.value));
 

@@ -34,6 +34,9 @@
     .benefits-card h1 { margin: 0; font-size: clamp(22px, 5.5vw, 28px); line-height: 1.4; }
     .benefits-card p { margin: 12px 0 28px; font-size: 15px; }
     .benefits-card .button { min-height: 48px; min-width: 160px; border-radius: 14px; }
+    .temporary-offer { margin-top: 28px; padding-top: 24px; border-top: 1px solid #edf0f5; }
+    .benefits-card .temporary-offer p { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+    .temporary-offer .button { background: #6950c9; }
   </style>
 </head>
 <body>
@@ -47,6 +50,10 @@
     <h1 id="benefits-title">暂无新App福利</h1>
     <p>发现更多实用应用，欢迎访问官方网站。</p>
     <a class="button" href="../index.html">官方网站</a>
+    <section class="temporary-offer" aria-label="临时测试入口">
+      <p>临时跳转测试</p>
+      <a class="button" href="projump:pawlog://app/redeem?code=PAWLOGFRIENDS">打开 Pawlog Pro 福利兑换</a>
+    </section>
   </main>
 </body>
 </html>

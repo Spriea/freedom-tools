@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Freedom Tools：简单、优雅、实用的移动应用与产品支持页面。">
   <title>Freedom Tools｜简单、优雅、实用的应用</title>
-  <link rel="stylesheet" href="./assets/site.css">
+  <link rel="stylesheet" href="./assets/site.css?v=20261023-media-3">
 </head>
 <body>
   <div class="container">
@@ -37,7 +37,7 @@
 
       <article class="card app">
         <img class="icon" src="./apps/yixiu-tools/app-icon.png" alt="一休工具" data-i18n-alt="yixiuName" width="100" height="100">
-        <div><h2 data-i18n="yixiuName">一休工具</h2><p data-i18n="yixiuDescription">167 个工具、16 个分类，涵盖图片、PDF、扫描识字、照片整理、音视频、记录提醒与日常实用功能。</p>
+        <div><h2 data-i18n="yixiuName">一休工具</h2><p class="has-feature-highlight" data-i18n="yixiuDescription">177 个工具、16 个分类。<span class="feature-highlight"><strong>「链接媒体保存」专项</strong>优化【小红书】分享链接解析能力，支持高清无水印图片、视频及实况照片（Live Photo）的识别与保存（即使是<strong>限制图片保存或视频下载的小红书笔记</strong>）。</span>涵盖图片、PDF、扫描识字、照片整理、音视频、记录提醒与日常实用功能。</p>
           <div class="store-actions"><a class="button" id="yixiu-details" href="./apps/yixiu-tools/" data-i18n="details">查看详情</a><a class="button store" href="https://apps.apple.com/app/id6817578515" target="_blank" rel="noopener" data-i18n="appStoreDownload">App Store 下载</a></div>
         </div>
       </article>
@@ -164,7 +164,7 @@
     <footer class="footer">© 2026 Freedom Tools</footer>
   </div>
 
-  <script src="./apps/yixiu-tools/content.js"></script>
+  <script src="./apps/yixiu-tools/content.js?v=20261023-media-3"></script>
   <script>
     const translations = {
       zh: {
@@ -422,6 +422,8 @@
       const app = window.YixiuContent[appLanguage] || window.YixiuContent.en;
       dictionary.yixiuName = app.name;
       dictionary.yixiuDescription = app.summary;
+      dictionary.yixiuHighlight = app.mediaHighlight || '';
+      dictionary.yixiuHighlightEmphasis = app.mediaHighlightEmphasis || [];
     });
     translations.pt.yixiuDescription = '167 ferramentas em 16 categorias para imagens, PDFs, reconhecimento de texto, fotos, áudio e vídeo, lembretes e tarefas do dia a dia.';
     translations.ru.yixiuDescription = '167 инструментов в 16 категориях для изображений, PDF, распознавания текста, фотографий, аудио и видео, напоминаний и повседневных задач.';
@@ -443,6 +445,27 @@
         const key = element.dataset.i18n;
         if (dictionary[key]) element.textContent = dictionary[key];
       });
+      const yixiuDescription = document.querySelector('[data-i18n="yixiuDescription"]');
+      const highlight = dictionary.yixiuHighlight;
+      const highlightIndex = highlight ? yixiuDescription.textContent.indexOf(highlight) : -1;
+      yixiuDescription.classList.toggle('has-feature-highlight', highlightIndex >= 0);
+      if (highlightIndex >= 0) {
+        const text = yixiuDescription.textContent;
+        const emphasis = document.createElement('span');
+        emphasis.className = 'feature-highlight';
+        let remaining = highlight;
+        for (const phrase of dictionary.yixiuHighlightEmphasis) {
+          const index = remaining.indexOf(phrase);
+          if (index < 0) continue;
+          const bold = document.createElement('strong');
+          bold.textContent = phrase;
+          emphasis.append(document.createTextNode(remaining.slice(0, index)), bold);
+          remaining = remaining.slice(index + phrase.length);
+        }
+        emphasis.append(document.createTextNode(remaining));
+        yixiuDescription.replaceChildren(document.createTextNode(text.slice(0, highlightIndex)), emphasis,
+          document.createTextNode(text.slice(highlightIndex + highlight.length)));
+      }
       document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
         element.setAttribute("aria-label", dictionary[element.dataset.i18nAriaLabel]);
       });

@@ -50,6 +50,18 @@ body {
 .copy-button:hover { background: #eef4ff; }
 .footer { padding: 40px; color: #888; text-align: center; }
 
+.feature-highlight {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-left: 3px solid #e58b46;
+  border-radius: 10px;
+  color: #a84617;
+  background: #fff4e8;
+  font-weight: 500;
+}
+.feature-highlight strong { font-weight: 750; }
+
 @media (max-width: 700px) {
   .container { width: min(100% - 24px, 1100px); padding: 16px 0 28px; }
   .hero { padding: 16px 0 30px; }
@@ -73,3 +85,5 @@ body {
   .contact-value { min-width: 0; flex: 1; text-align: left; }
   .copy-button { flex: 0 0 auto; }
 }
+
+.app p.has-feature-highlight { display: block; overflow: visible; -webkit-line-clamp: unset; }

@@ -37,7 +37,7 @@ def localization_key(expression, category=None):
 
 metadata = {}
 for _, source in sources:
-    for match in re.finditer(r'ToolDefinition\(\s*id:\s*(\.[\w]+|"[^"\n]+"|ToolID\("[^"\n]+"\)),\s*name:\s*(.*?),\s*shortDescription:\s*(.*?),\s*icon:', source, re.S):
+    for match in re.finditer(r'(?:ToolDefinition|\.init)\(\s*id:\s*(\.[\w]+|"[^"\n]+"|ToolID\("[^"\n]+"\)),\s*name:\s*(.*?),\s*shortDescription:\s*(.*?),\s*icon:', source, re.S):
         tool, name, description = match.groups()
         tool_id = symbols[tool[1:]] if tool.startswith('.') else re.search(r'"([^"]+)"', tool)[1]
         category = tool_id.split('.')[0]
@@ -49,9 +49,16 @@ for tool, symbol in {'cleanup': 'cleanup', 'duplicates': 'duplicates', 'similar'
 
 order_source = (root / 'Core/Tooling/ToolRegistry.swift').read_text().split('enum ToolCategoryOrder')[1]
 groups = re.findall(r'\.(\w+): \[([^\]]+)\]', order_source)
+# Category display order comes from allCases, not the rank dictionary's source order.
+category_source = (root / 'Core/Tooling/ToolCategory.swift').read_text().split('var id:')[0]
+category_order = re.findall(r'^    case (\w+)\s*$', category_source, re.M)
+group_map = dict(groups)
+if set(category_order) != set(group_map):
+    raise ValueError('Category definitions and Registry ordering differ')
 catalog = {'languages': languages, 'categories': []}
 seen = set()
-for category, raw_ids in groups:
+for category in category_order:
+    raw_ids = group_map[category]
     ids = re.findall(r'"([^"]+)"', raw_ids)
     tools = []
     for tool_id in ids:
@@ -72,7 +79,10 @@ for category, raw_ids in groups:
     catalog['categories'].append({'id': category, 'title': titles, 'tools': tools})
 catalog['toolCount'] = len(seen)
 catalog['categoryCount'] = len(catalog['categories'])
-assert catalog['toolCount'] == 167 and catalog['categoryCount'] == 16
+# Fail rather than silently ship an incomplete directory after adding a tool.
+guide_ids = set(json.loads((root / 'Resources/ToolGuide.json').read_text()))
+if seen != guide_ids:
+    raise ValueError(f'Registry/guide mismatch: missing {guide_ids - seen}, extra {seen - guide_ids}')
 target = Path(__file__).resolve().parents[1] / 'apps/yixiu-tools/catalog.js'
 target.write_text('/* Generated from the iOS Registry order and String Catalog. */\nwindow.YixiuCatalog = ' + json.dumps(catalog, ensure_ascii=False, indent=2) + ';\n')
 print(f'Exported {len(seen)} tools, {len(groups)} categories, {len(languages)} languages to {target}')

@@ -25,6 +25,43 @@ window.YixiuCatalog = {
       },
       "tools": [
         {
+          "id": "image.stamp",
+          "text": {
+            "zh-Hans": [
+              "邮票风格制作",
+              "制作齿孔相片邮票与排版"
+            ],
+            "zh-Hant": [
+              "郵票風格製作",
+              "製作齒孔相片郵票與排版"
+            ],
+            "en": [
+              "Photo Stamps",
+              "Create perforated photo stamps and layouts"
+            ],
+            "ja": [
+              "フォト切手",
+              "写真を目打ち付きの切手風にレイアウト"
+            ],
+            "ko": [
+              "사진 우표 만들기",
+              "천공 테두리 사진 우표와 레이아웃 만들기"
+            ],
+            "de": [
+              "Fotobriefmarken",
+              "Fotobriefmarken mit gezacktem Rand gestalten"
+            ],
+            "fr": [
+              "Timbres photo",
+              "Créez et disposez des timbres photo perforés"
+            ],
+            "es": [
+              "Sellos con fotos",
+              "Crea y organiza sellos fotográficos perforados"
+            ]
+          }
+        },
+        {
           "id": "image.stitch",
           "text": {
             "zh-Hans": [
@@ -3206,6 +3243,43 @@ window.YixiuCatalog = {
               "Descansos cortos, orientación de voz y recordatorios regulares"
             ]
           }
+        },
+        {
+          "id": "life.newAppBenefits",
+          "text": {
+            "zh-Hans": [
+              "新App福利",
+              "查看新App的福利活动与兑换入口"
+            ],
+            "zh-Hant": [
+              "新App福利",
+              "查看新App的優惠活動與兌換入口"
+            ],
+            "en": [
+              "New App Offers",
+              "Explore new app offers and redemption links"
+            ],
+            "ja": [
+              "新アプリ特典",
+              "新アプリの特典と引き換え先を見る"
+            ],
+            "ko": [
+              "새 앱 혜택",
+              "새 앱의 혜택과 교환 링크 확인"
+            ],
+            "de": [
+              "Neue App-Angebote",
+              "Angebote und Einlösung für neue Apps"
+            ],
+            "fr": [
+              "Offres de nouvelles apps",
+              "Offres et liens d’échange de nouvelles apps"
+            ],
+            "es": [
+              "Ofertas de nuevas apps",
+              "Ofertas y enlaces de canje de nuevas apps"
+            ]
+          }
         }
       ]
     },
@@ -3222,6 +3296,43 @@ window.YixiuCatalog = {
         "es": "Relojes y temporizadores"
       },
       "tools": [
+        {
+          "id": "time.almanac",
+          "text": {
+            "zh-Hans": [
+              "黄历",
+              "公历农历、节气节日与每日宜忌"
+            ],
+            "zh-Hant": [
+              "黃曆",
+              "國曆農曆、節氣節日與每日宜忌"
+            ],
+            "en": [
+              "Chinese Almanac",
+              "Lunar dates, solar terms, festivals and daily traditions"
+            ],
+            "ja": [
+              "中国暦",
+              "旧暦・二十四節気・伝統行事と日々の暦注"
+            ],
+            "ko": [
+              "중국 전통 달력",
+              "음력, 절기, 명절과 날마다의 전통"
+            ],
+            "de": [
+              "Chinesischer Kalender",
+              "Mondkalender, Jahreszeitenpunkte und Tagesbräuche"
+            ],
+            "fr": [
+              "Almanach chinois",
+              "Dates lunaires, saisons, fêtes et traditions du jour"
+            ],
+            "es": [
+              "Almanaque chino",
+              "Fechas lunares, estaciones, fiestas y tradiciones diarias"
+            ]
+          }
+        },
         {
           "id": "time.floatingClock",
           "text": {
@@ -3570,6 +3681,80 @@ window.YixiuCatalog = {
         "es": "Audio y vídeo"
       },
       "tools": [
+        {
+          "id": "audioVideo.radio",
+          "text": {
+            "zh-Hans": [
+              "网络收音机",
+              "收听在线电台，收藏与睡眠定时"
+            ],
+            "zh-Hant": [
+              "網路收音機",
+              "收聽線上電台、加入收藏並設定睡眠定時"
+            ],
+            "en": [
+              "Internet Radio",
+              "Listen to online radio with favorites and a sleep timer"
+            ],
+            "ja": [
+              "ネットラジオ",
+              "ネットラジオ・お気に入り・スリープタイマー"
+            ],
+            "ko": [
+              "인터넷 라디오",
+              "온라인 라디오, 즐겨찾기 및 취침 타이머"
+            ],
+            "de": [
+              "Internetradio",
+              "Online-Radio mit Favoriten und Einschlaftimer"
+            ],
+            "fr": [
+              "Radio Internet",
+              "Écoutez la radio avec favoris et minuterie de sommeil"
+            ],
+            "es": [
+              "Radio por Internet",
+              "Escucha emisoras con favoritos y temporizador de sueño"
+            ]
+          }
+        },
+        {
+          "id": "audioVideo.livePhoto",
+          "text": {
+            "zh-Hans": [
+              "视频转实况照片",
+              "选择视频片段和封面，保存实况照片"
+            ],
+            "zh-Hant": [
+              "影片轉原況照片",
+              "選擇影片片段與封面，儲存原況照片"
+            ],
+            "en": [
+              "Video to Live Photo",
+              "Choose a video clip and cover, then save a Live Photo"
+            ],
+            "ja": [
+              "動画をLive Photoに",
+              "動画の区間と表紙を選びLive Photoで保存"
+            ],
+            "ko": [
+              "동영상을 Live Photo로",
+              "동영상 구간과 커버를 선택해 Live Photo로 저장"
+            ],
+            "de": [
+              "Video zu Live Photo",
+              "Videoclip und Titelbild wählen und als Live Photo speichern"
+            ],
+            "fr": [
+              "Vidéo en Live Photo",
+              "Choisissez un extrait et une couverture, puis enregistrez une Live Photo"
+            ],
+            "es": [
+              "Vídeo a Live Photo",
+              "Elige un fragmento y una portada y guarda una Live Photo"
+            ]
+          }
+        },
         {
           "id": "audioVideo.videoCompress",
           "text": {
@@ -4787,6 +4972,443 @@ window.YixiuCatalog = {
       ]
     },
     {
+      "id": "file",
+      "title": {
+        "zh-Hans": "文件工具",
+        "zh-Hant": "檔案工具",
+        "en": "Files",
+        "ja": "ファイル",
+        "ko": "파일",
+        "de": "Dateien",
+        "fr": "Fichiers",
+        "es": "Archivos"
+      },
+      "tools": [
+        {
+          "id": "file.linkMedia",
+          "text": {
+            "zh-Hans": [
+              "链接媒体保存",
+              "预览并保存获授权的公开图片和视频"
+            ],
+            "zh-Hant": [
+              "連結媒體儲存",
+              "預覽並儲存已獲授權的公開圖片與影片"
+            ],
+            "en": [
+              "Save Linked Media",
+              "Preview and save public images and videos you may download"
+            ],
+            "ja": [
+              "リンクのメディアを保存",
+              "ダウンロード権限のある公開画像や動画を保存"
+            ],
+            "ko": [
+              "링크 미디어 저장",
+              "다운로드 권한이 있는 공개 이미지와 동영상 미리보기 및 저장"
+            ],
+            "de": [
+              "Verlinkte Medien speichern",
+              "Berechtigte öffentliche Bilder und Videos ansehen und speichern"
+            ],
+            "fr": [
+              "Enregistrer un média lié",
+              "Prévisualisez et enregistrez des images et vidéos publiques autorisées"
+            ],
+            "es": [
+              "Guardar medios enlazados",
+              "Previsualiza y guarda imágenes y vídeos públicos autorizados"
+            ]
+          }
+        },
+        {
+          "id": "file.wirelessTransfer",
+          "text": {
+            "zh-Hans": [
+              "手机电脑无线互传",
+              "通过电脑或手机浏览器双向传输文件"
+            ],
+            "zh-Hant": [
+              "手機電腦無線互傳",
+              "通過電腦或手機瀏覽器雙向傳輸檔案"
+            ],
+            "en": [
+              "Wireless File Transfer",
+              "Two-way transmission of files through computer or mobile phone browser"
+            ],
+            "ja": [
+              "ワイヤレスファイル転送",
+              "コンピュータまたはスマートフォンのブラウザでファイルを双方向に転送する"
+            ],
+            "ko": [
+              "무선 파일 전송",
+              "컴퓨터 또는 모바일 브라우저를 통해 파일을 양방향으로 전송합니다."
+            ],
+            "de": [
+              "Drahtlose Dateiübertragung",
+              "Zwei-Wege-Übertragung von Dateien über Computer- oder Mobiltelefonbrowser"
+            ],
+            "fr": [
+              "Transfert sans fil",
+              "Transmission bidirectionnelle de fichiers via un ordinateur ou un navigateur de téléphone portable"
+            ],
+            "es": [
+              "Transferencia inalámbrica",
+              "Transmisión bidireccional de archivos a través del navegador del ordenador o del teléfono móvil"
+            ]
+          }
+        },
+        {
+          "id": "file.batchRename",
+          "text": {
+            "zh-Hans": [
+              "批量重命名",
+              "按规则批量修改文件名"
+            ],
+            "zh-Hant": [
+              "批次重命名",
+              "按規則批次修改檔案名"
+            ],
+            "en": [
+              "Batch renaming",
+              "Batch modify the file name according to the rules"
+            ],
+            "ja": [
+              "一括リネーム",
+              "規則に従ってファイル名を一括で変更する"
+            ],
+            "ko": [
+              "일괄 이름 변경",
+              "규칙에 따라 파일 이름을 일괄 수정합니다"
+            ],
+            "de": [
+              "Umbenennen von Chargen",
+              "Batch ändern Sie den Dateinamen gemäß den Regeln"
+            ],
+            "fr": [
+              "Renommage du lot",
+              "Modifier par lot le nom du fichier selon les règles"
+            ],
+            "es": [
+              "Cambio de nombre del lote",
+              "Modifique el nombre del archivo por lotes de acuerdo con las reglas"
+            ]
+          }
+        },
+        {
+          "id": "file.info",
+          "text": {
+            "zh-Hans": [
+              "文件信息",
+              "查看文件类型、大小与时间"
+            ],
+            "zh-Hant": [
+              "檔案資訊",
+              "查看檔案類型、大小與時間"
+            ],
+            "en": [
+              "File Info",
+              "Check the file type, size and time"
+            ],
+            "ja": [
+              "ファイル情報",
+              "ファイルの種類、サイズ、時間を確認する"
+            ],
+            "ko": [
+              "파일 정보",
+              "파일 유형, 크기 및 시간을 확인하십시오"
+            ],
+            "de": [
+              "Dateiinformationen",
+              "Überprüfen Sie den Dateityp, die Größe und die Zeit"
+            ],
+            "fr": [
+              "Infos du fichier",
+              "Vérifiez le type de fichier, la taille et le temps"
+            ],
+            "es": [
+              "Información de archivo",
+              "Comprueba el tipo de archivo, el tamaño y el tiempo"
+            ]
+          }
+        },
+        {
+          "id": "file.checksum",
+          "text": {
+            "zh-Hans": [
+              "文件校验",
+              "计算 MD5 与 SHA-256"
+            ],
+            "zh-Hant": [
+              "檔案校驗",
+              "計算 MD5 與 SHA-256"
+            ],
+            "en": [
+              "File Checksum",
+              "Calculate MD5 and SHA-256"
+            ],
+            "ja": [
+              "ファイルのチェックサム",
+              "MD5 と SHA-256 を計算する"
+            ],
+            "ko": [
+              "파일 체크섬",
+              "MD5와 SHA-256을 계산합니다"
+            ],
+            "de": [
+              "Datei-Prüfsumme",
+              "MD5 und SHA-256 berechnen"
+            ],
+            "fr": [
+              "Somme de contrôle",
+              "Calculer MD5 et SHA-256"
+            ],
+            "es": [
+              "Suma de verificación",
+              "Calcule MD5 y SHA-256"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "measurement",
+      "title": {
+        "zh-Hans": "测量工具",
+        "zh-Hant": "測量工具",
+        "en": "Measurements",
+        "ja": "測定ツール",
+        "ko": "측정 도구",
+        "de": "Messwerkzeuge",
+        "fr": "Mesures",
+        "es": "Mediciones"
+      },
+      "tools": [
+        {
+          "id": "measurement.ruler",
+          "text": {
+            "zh-Hans": [
+              "屏幕刻度尺",
+              "校准屏幕刻度，测量厘米和英寸"
+            ],
+            "zh-Hant": [
+              "螢幕刻度尺",
+              "校正螢幕刻度，測量公分和英吋"
+            ],
+            "en": [
+              "Screen Ruler",
+              "Calibrate and measure in centimeters or inches"
+            ],
+            "ja": [
+              "画面定規",
+              "画面を校正してセンチやインチで測定"
+            ],
+            "ko": [
+              "화면 자",
+              "화면 눈금을 보정하고 센티미터와 인치로 측정"
+            ],
+            "de": [
+              "Bildschirmlineal",
+              "Bildschirm kalibrieren und Längen messen"
+            ],
+            "fr": [
+              "Règle à l’écran",
+              "Calibrez et mesurez en centimètres ou pouces"
+            ],
+            "es": [
+              "Regla en pantalla",
+              "Calibra y mide en centímetros o pulgadas"
+            ]
+          }
+        },
+        {
+          "id": "measurement.level",
+          "text": {
+            "zh-Hans": [
+              "水平仪",
+              "检测平面是否水平"
+            ],
+            "zh-Hant": [
+              "水平儀",
+              "檢測平面是否水平"
+            ],
+            "en": [
+              "Spirit level",
+              "Check whether the plane is horizontal"
+            ],
+            "ja": [
+              "水平器",
+              "平面が水平かどうかを検出する"
+            ],
+            "ko": [
+              "수평계",
+              "평면이 수평인지 확인하십시오."
+            ],
+            "de": [
+              "Wasserwaage",
+              "Überprüfen Sie, ob die Ebene horizontal ist"
+            ],
+            "fr": [
+              "Niveau à bulle",
+              "Vérifiez si l'avion est horizontal"
+            ],
+            "es": [
+              "Nivel",
+              "Comprueba si el avión es horizontal"
+            ]
+          }
+        },
+        {
+          "id": "measurement.compass",
+          "text": {
+            "zh-Hans": [
+              "指南针",
+              "显示方向与角度"
+            ],
+            "zh-Hant": [
+              "指南針",
+              "顯示方向與角度"
+            ],
+            "en": [
+              "Compass",
+              "Display the direction and angle"
+            ],
+            "ja": [
+              "コンパス",
+              "方向と角度を表示"
+            ],
+            "ko": [
+              "나침반",
+              "방향 및 각도 표시"
+            ],
+            "de": [
+              "Kompass",
+              "Zeigt die Richtung und den Winkel an"
+            ],
+            "fr": [
+              "Boussole",
+              "Afficher la direction et l'angle"
+            ],
+            "es": [
+              "Brújula",
+              "Mostrar la dirección y el ángulo"
+            ]
+          }
+        },
+        {
+          "id": "measurement.altimeter",
+          "text": {
+            "zh-Hans": [
+              "海拔与气压仪",
+              "查看 GPS 海拔、精度及气压变化"
+            ],
+            "zh-Hant": [
+              "海拔與氣壓儀",
+              "查看 GPS 海拔、精度及氣壓變化"
+            ],
+            "en": [
+              "Altitude & Pressure",
+              "Check GPS altitude, accuracy and air pressure changes"
+            ],
+            "ja": [
+              "高度と気圧",
+              "GPSの標高、精度、気圧の変化を確認する"
+            ],
+            "ko": [
+              "고도 및 기압",
+              "GPS 고도, 정확도 및 기압 변화를 확인하십시오"
+            ],
+            "de": [
+              "Höhe & Luftdruck",
+              "GPS-Höhe, Genauigkeit und Luftdruckänderungen überprüfen"
+            ],
+            "fr": [
+              "Altitude et pression",
+              "Vérifiez l'altitude GPS, la précision et les changements de pression atmosphérique"
+            ],
+            "es": [
+              "Altitud y presión",
+              "Compruebe la altitud, la precisión y los cambios de presión del aire del GPS"
+            ]
+          }
+        },
+        {
+          "id": "measurement.inclinometer",
+          "text": {
+            "zh-Hans": [
+              "倾角仪",
+              "测量倾斜角度"
+            ],
+            "zh-Hant": [
+              "傾角儀",
+              "測量傾斜角度"
+            ],
+            "en": [
+              "Inclinometer",
+              "Measure the angle of inclination"
+            ],
+            "ja": [
+              "傾斜計",
+              "傾斜角度を測定する"
+            ],
+            "ko": [
+              "경사계",
+              "기울기 각도 측정"
+            ],
+            "de": [
+              "Neigungsmesser",
+              "Den Neigungswinkel messen"
+            ],
+            "fr": [
+              "Inclinomètre",
+              "Mesurer l'angle d'inclinaison"
+            ],
+            "es": [
+              "Inclinómetro",
+              "Mide el ángulo de inclinación"
+            ]
+          }
+        },
+        {
+          "id": "measurement.decibel",
+          "text": {
+            "zh-Hans": [
+              "分贝仪",
+              "测量环境噪音大小"
+            ],
+            "zh-Hant": [
+              "分貝儀",
+              "測量環境噪音大小"
+            ],
+            "en": [
+              "Sound Level Meter",
+              "Measure the amount of environmental noise"
+            ],
+            "ja": [
+              "騒音計",
+              "環境騒音の大きさを測定する"
+            ],
+            "ko": [
+              "소음 측정기",
+              "환경 소음의 크기를 측정합니다"
+            ],
+            "de": [
+              "Schallpegelmesser",
+              "Messen Sie die Menge an Umgebungslärm"
+            ],
+            "fr": [
+              "Sonomètre",
+              "Mesurer la quantité de bruit environnemental"
+            ],
+            "es": [
+              "Sonómetro",
+              "Mida la cantidad de ruido ambiental"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "table",
       "title": {
         "zh-Hans": "表格工具",
@@ -5129,369 +5751,6 @@ window.YixiuCatalog = {
             "es": [
               "Disposición de varias mesas",
               "Ordenar varias tablas en lotes"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "file",
-      "title": {
-        "zh-Hans": "文件工具",
-        "zh-Hant": "檔案工具",
-        "en": "Files",
-        "ja": "ファイル",
-        "ko": "파일",
-        "de": "Dateien",
-        "fr": "Fichiers",
-        "es": "Archivos"
-      },
-      "tools": [
-        {
-          "id": "file.wirelessTransfer",
-          "text": {
-            "zh-Hans": [
-              "手机电脑无线互传",
-              "通过电脑或手机浏览器双向传输文件"
-            ],
-            "zh-Hant": [
-              "手機電腦無線互傳",
-              "通過電腦或手機瀏覽器雙向傳輸檔案"
-            ],
-            "en": [
-              "Wireless File Transfer",
-              "Two-way transmission of files through computer or mobile phone browser"
-            ],
-            "ja": [
-              "ワイヤレスファイル転送",
-              "コンピュータまたはスマートフォンのブラウザでファイルを双方向に転送する"
-            ],
-            "ko": [
-              "무선 파일 전송",
-              "컴퓨터 또는 모바일 브라우저를 통해 파일을 양방향으로 전송합니다."
-            ],
-            "de": [
-              "Drahtlose Dateiübertragung",
-              "Zwei-Wege-Übertragung von Dateien über Computer- oder Mobiltelefonbrowser"
-            ],
-            "fr": [
-              "Transfert sans fil",
-              "Transmission bidirectionnelle de fichiers via un ordinateur ou un navigateur de téléphone portable"
-            ],
-            "es": [
-              "Transferencia inalámbrica",
-              "Transmisión bidireccional de archivos a través del navegador del ordenador o del teléfono móvil"
-            ]
-          }
-        },
-        {
-          "id": "file.batchRename",
-          "text": {
-            "zh-Hans": [
-              "批量重命名",
-              "按规则批量修改文件名"
-            ],
-            "zh-Hant": [
-              "批次重命名",
-              "按規則批次修改檔案名"
-            ],
-            "en": [
-              "Batch renaming",
-              "Batch modify the file name according to the rules"
-            ],
-            "ja": [
-              "一括リネーム",
-              "規則に従ってファイル名を一括で変更する"
-            ],
-            "ko": [
-              "일괄 이름 변경",
-              "규칙에 따라 파일 이름을 일괄 수정합니다"
-            ],
-            "de": [
-              "Umbenennen von Chargen",
-              "Batch ändern Sie den Dateinamen gemäß den Regeln"
-            ],
-            "fr": [
-              "Renommage du lot",
-              "Modifier par lot le nom du fichier selon les règles"
-            ],
-            "es": [
-              "Cambio de nombre del lote",
-              "Modifique el nombre del archivo por lotes de acuerdo con las reglas"
-            ]
-          }
-        },
-        {
-          "id": "file.info",
-          "text": {
-            "zh-Hans": [
-              "文件信息",
-              "查看文件类型、大小与时间"
-            ],
-            "zh-Hant": [
-              "檔案資訊",
-              "查看檔案類型、大小與時間"
-            ],
-            "en": [
-              "File Info",
-              "Check the file type, size and time"
-            ],
-            "ja": [
-              "ファイル情報",
-              "ファイルの種類、サイズ、時間を確認する"
-            ],
-            "ko": [
-              "파일 정보",
-              "파일 유형, 크기 및 시간을 확인하십시오"
-            ],
-            "de": [
-              "Dateiinformationen",
-              "Überprüfen Sie den Dateityp, die Größe und die Zeit"
-            ],
-            "fr": [
-              "Infos du fichier",
-              "Vérifiez le type de fichier, la taille et le temps"
-            ],
-            "es": [
-              "Información de archivo",
-              "Comprueba el tipo de archivo, el tamaño y el tiempo"
-            ]
-          }
-        },
-        {
-          "id": "file.checksum",
-          "text": {
-            "zh-Hans": [
-              "文件校验",
-              "计算 MD5 与 SHA-256"
-            ],
-            "zh-Hant": [
-              "檔案校驗",
-              "計算 MD5 與 SHA-256"
-            ],
-            "en": [
-              "File Checksum",
-              "Calculate MD5 and SHA-256"
-            ],
-            "ja": [
-              "ファイルのチェックサム",
-              "MD5 と SHA-256 を計算する"
-            ],
-            "ko": [
-              "파일 체크섬",
-              "MD5와 SHA-256을 계산합니다"
-            ],
-            "de": [
-              "Datei-Prüfsumme",
-              "MD5 und SHA-256 berechnen"
-            ],
-            "fr": [
-              "Somme de contrôle",
-              "Calculer MD5 et SHA-256"
-            ],
-            "es": [
-              "Suma de verificación",
-              "Calcule MD5 y SHA-256"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "measurement",
-      "title": {
-        "zh-Hans": "测量工具",
-        "zh-Hant": "測量工具",
-        "en": "Measurements",
-        "ja": "測定ツール",
-        "ko": "측정 도구",
-        "de": "Messwerkzeuge",
-        "fr": "Mesures",
-        "es": "Mediciones"
-      },
-      "tools": [
-        {
-          "id": "measurement.level",
-          "text": {
-            "zh-Hans": [
-              "水平仪",
-              "检测平面是否水平"
-            ],
-            "zh-Hant": [
-              "水平儀",
-              "檢測平面是否水平"
-            ],
-            "en": [
-              "Spirit level",
-              "Check whether the plane is horizontal"
-            ],
-            "ja": [
-              "水平器",
-              "平面が水平かどうかを検出する"
-            ],
-            "ko": [
-              "수평계",
-              "평면이 수평인지 확인하십시오."
-            ],
-            "de": [
-              "Wasserwaage",
-              "Überprüfen Sie, ob die Ebene horizontal ist"
-            ],
-            "fr": [
-              "Niveau à bulle",
-              "Vérifiez si l'avion est horizontal"
-            ],
-            "es": [
-              "Nivel",
-              "Comprueba si el avión es horizontal"
-            ]
-          }
-        },
-        {
-          "id": "measurement.compass",
-          "text": {
-            "zh-Hans": [
-              "指南针",
-              "显示方向与角度"
-            ],
-            "zh-Hant": [
-              "指南針",
-              "顯示方向與角度"
-            ],
-            "en": [
-              "Compass",
-              "Display the direction and angle"
-            ],
-            "ja": [
-              "コンパス",
-              "方向と角度を表示"
-            ],
-            "ko": [
-              "나침반",
-              "방향 및 각도 표시"
-            ],
-            "de": [
-              "Kompass",
-              "Zeigt die Richtung und den Winkel an"
-            ],
-            "fr": [
-              "Boussole",
-              "Afficher la direction et l'angle"
-            ],
-            "es": [
-              "Brújula",
-              "Mostrar la dirección y el ángulo"
-            ]
-          }
-        },
-        {
-          "id": "measurement.altimeter",
-          "text": {
-            "zh-Hans": [
-              "海拔与气压仪",
-              "查看 GPS 海拔、精度及气压变化"
-            ],
-            "zh-Hant": [
-              "海拔與氣壓儀",
-              "查看 GPS 海拔、精度及氣壓變化"
-            ],
-            "en": [
-              "Altitude & Pressure",
-              "Check GPS altitude, accuracy and air pressure changes"
-            ],
-            "ja": [
-              "高度と気圧",
-              "GPSの標高、精度、気圧の変化を確認する"
-            ],
-            "ko": [
-              "고도 및 기압",
-              "GPS 고도, 정확도 및 기압 변화를 확인하십시오"
-            ],
-            "de": [
-              "Höhe & Luftdruck",
-              "GPS-Höhe, Genauigkeit und Luftdruckänderungen überprüfen"
-            ],
-            "fr": [
-              "Altitude et pression",
-              "Vérifiez l'altitude GPS, la précision et les changements de pression atmosphérique"
-            ],
-            "es": [
-              "Altitud y presión",
-              "Compruebe la altitud, la precisión y los cambios de presión del aire del GPS"
-            ]
-          }
-        },
-        {
-          "id": "measurement.inclinometer",
-          "text": {
-            "zh-Hans": [
-              "倾角仪",
-              "测量倾斜角度"
-            ],
-            "zh-Hant": [
-              "傾角儀",
-              "測量傾斜角度"
-            ],
-            "en": [
-              "Inclinometer",
-              "Measure the angle of inclination"
-            ],
-            "ja": [
-              "傾斜計",
-              "傾斜角度を測定する"
-            ],
-            "ko": [
-              "경사계",
-              "기울기 각도 측정"
-            ],
-            "de": [
-              "Neigungsmesser",
-              "Den Neigungswinkel messen"
-            ],
-            "fr": [
-              "Inclinomètre",
-              "Mesurer l'angle d'inclinaison"
-            ],
-            "es": [
-              "Inclinómetro",
-              "Mide el ángulo de inclinación"
-            ]
-          }
-        },
-        {
-          "id": "measurement.decibel",
-          "text": {
-            "zh-Hans": [
-              "分贝仪",
-              "测量环境噪音大小"
-            ],
-            "zh-Hant": [
-              "分貝儀",
-              "測量環境噪音大小"
-            ],
-            "en": [
-              "Sound Level Meter",
-              "Measure the amount of environmental noise"
-            ],
-            "ja": [
-              "騒音計",
-              "環境騒音の大きさを測定する"
-            ],
-            "ko": [
-              "소음 측정기",
-              "환경 소음의 크기를 측정합니다"
-            ],
-            "de": [
-              "Schallpegelmesser",
-              "Messen Sie die Menge an Umgebungslärm"
-            ],
-            "fr": [
-              "Sonomètre",
-              "Mesurer la quantité de bruit environnemental"
-            ],
-            "es": [
-              "Sonómetro",
-              "Mida la cantidad de ruido ambiental"
             ]
           }
         }
@@ -5932,6 +6191,117 @@ window.YixiuCatalog = {
         "es": "Registros y recordatorios"
       },
       "tools": [
+        {
+          "id": "record.activityStats",
+          "text": {
+            "zh-Hans": [
+              "运动统计",
+              "健康数据、运动趋势与手动记录"
+            ],
+            "zh-Hant": [
+              "運動統計",
+              "健康資料、運動趨勢與手動記錄"
+            ],
+            "en": [
+              "Activity Stats",
+              "Health data, activity trends and manual logs"
+            ],
+            "ja": [
+              "運動統計",
+              "ヘルスケアデータ・運動の推移・手動記録"
+            ],
+            "ko": [
+              "활동 통계",
+              "건강 데이터, 활동 추이 및 수동 기록"
+            ],
+            "de": [
+              "Aktivitätsstatistik",
+              "Gesundheitsdaten, Trends und manuelle Einträge"
+            ],
+            "fr": [
+              "Statistiques d’activité",
+              "Données de santé, tendances et saisie manuelle"
+            ],
+            "es": [
+              "Estadísticas de actividad",
+              "Datos de salud, tendencias y registros manuales"
+            ]
+          }
+        },
+        {
+          "id": "record.birthday",
+          "text": {
+            "zh-Hans": [
+              "生日记录",
+              "记住公历农历生日，提前送上祝福"
+            ],
+            "zh-Hant": [
+              "生日記錄",
+              "記住國曆農曆生日，提前送上祝福"
+            ],
+            "en": [
+              "Birthdays",
+              "Remember solar and lunar birthdays with reminders"
+            ],
+            "ja": [
+              "誕生日記録",
+              "新暦・旧暦の誕生日を記録してお知らせ"
+            ],
+            "ko": [
+              "생일 기록",
+              "양력·음력 생일을 기록하고 미리 알림 받기"
+            ],
+            "de": [
+              "Geburtstage",
+              "Geburtstage nach Sonnen- und Mondkalender merken"
+            ],
+            "fr": [
+              "Anniversaires",
+              "Retenez les anniversaires solaires et lunaires"
+            ],
+            "es": [
+              "Cumpleaños",
+              "Recuerda cumpleaños solares y lunares con avisos"
+            ]
+          }
+        },
+        {
+          "id": "record.inventory",
+          "text": {
+            "zh-Hans": [
+              "出入库管理",
+              "管理商品、库存变动与进出记录"
+            ],
+            "zh-Hant": [
+              "出入庫管理",
+              "管理商品、庫存異動與進出紀錄"
+            ],
+            "en": [
+              "Inventory Manager",
+              "Manage products, stock movements, and history"
+            ],
+            "ja": [
+              "在庫管理",
+              "商品・入出庫・履歴を管理"
+            ],
+            "ko": [
+              "입출고 관리",
+              "상품, 재고 변동 및 입출고 기록 관리"
+            ],
+            "de": [
+              "Lagerverwaltung",
+              "Artikel, Bestandsänderungen und Verlauf verwalten"
+            ],
+            "fr": [
+              "Gestion des stocks",
+              "Gérez les articles, mouvements et historiques de stock"
+            ],
+            "es": [
+              "Gestión de inventario",
+              "Gestiona productos, movimientos e historial de existencias"
+            ]
+          }
+        },
         {
           "id": "record.cycleTracker",
           "text": {
@@ -6431,6 +6801,6 @@ window.YixiuCatalog = {
       ]
     }
   ],
-  "toolCount": 167,
+  "toolCount": 177,
   "categoryCount": 16
 };

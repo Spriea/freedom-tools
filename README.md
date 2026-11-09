@@ -4,7 +4,7 @@ Freedom Tools 是一个静态应用展示站点，用于集中展示移动端应
 
 ## 当前应用
 
-- 随行记 / TrackAlong：GPS 轨迹记录、行程管理与出行花费统计，免费使用，支持英文及简体中文。iOS 使用 Apple MapKit，本地 ZIP 备份不含完整 GPS 轨迹点。介绍、隐私及支持继续使用 `apps/road-cost/` 路径。
+- 随行迹 / TrackAlong：GPS 轨迹记录、行程管理与出行花费统计，免费使用，支持英文及简体中文。iOS 使用 Apple MapKit，本地 ZIP 备份不含完整 GPS 轨迹点。介绍、隐私及支持继续使用 `apps/road-cost/` 路径。
 
 - 时光相册 / TimeAlbum：旅行、纪念日、成长、活动与普通相册，空间浏览、故事及回忆影片；可选 iCloud 备份默认关闭，以实际覆盖为准。简介、隐私与技术支持位于 `apps/time-album/`；App Store ID：6828337518，公开可用性以商店实际结果为准。
 

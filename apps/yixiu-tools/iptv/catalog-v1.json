@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "revision": 1,
+  "publishedAt": "2026-11-06T00:00:00Z",
+  "expiresAt": "2027-02-01T00:00:00Z",
+  "channels": [
+    {
+      "id": "cn.cctv.1",
+      "name": "CCTV-1 综合",
+      "group": "general",
+      "metadata": {
+        "country": "CN",
+        "region": "CN",
+        "languages": [
+          "zh"
+        ],
+        "categories": [
+          "general"
+        ],
+        "origin": "community",
+        "authorization": "unverified",
+        "sourceURL": "https://tv.cctv.com/live/",
+        "recommended": false
+      },
+      "enabled": true,
+      "aliases": [
+        "CCTV1",
+        "央视1套"
+      ]
+    },
+    {
+      "id": "cn.cctv.2",
+      "name": "CCTV-2 财经",
+      "group": "business",
+      "metadata": {
+        "country": "CN",
+        "region": "CN",
+        "languages": [
+          "zh"
+        ],
+        "categories": [
+          "business"
+        ],
+        "origin": "community",
+        "authorization": "unverified",
+        "sourceURL": "https://tv.cctv.com/live/",
+        "recommended": false
+      },
+      "enabled": true,
+      "aliases": [
+        "CCTV2",
+        "央视2套"
+      ]
+    },
+    {
+      "id": "cn.cctv.3",
+      "name": "CCTV-3 综艺",
+      "group": "entertainment",
+      "metadata": {
+        "country": "CN",
+        "region": "CN",
+        "languages": [
+          "zh"
+        ],
+        "categories": [
+          "entertainment"
+        ],
+        "origin": "community",
+        "authorization": "unverified",
+        "sourceURL": "https://tv.cctv.com/live/",
+        "recommended": false
+      },
+      "enabled": true,
+      "aliases": [
+        "CCTV3",
+        "央视3套"
+      ]
+    },
+    {
+      "id": "cn.cctv.4",
+      "name": "CCTV-4 中文国际",
+      "group": "general",
+      "metadata": {
+        "country": "CN",
+        "region": "CN",
+        "languages": [
+          "zh"
+        ],
+        "categories": [
+          "general"
+        ],
+        "origin": "community",
+        "authorization": "unverified",
+        "sourceURL": "https://tv.cctv.com/live/",
+        "recommended": false
+      },
+      "enabled": true,
+      "aliases": [
+        "CCTV4",
+        "央视4套"
+      ]
+    },
+    {
+      "id": "cn.cctv.5",
+      "name": "CCTV-5 体育",
+      "group": "sports",
+      "metadata": {
+        "country": "CN",
+        "region": "CN",
+        "languages": [
+          "zh"
+        ],
+        "categories": [
+          "sports"
+        ],
+        "origin": "community",
+        "authorization": "unverified",
+        "sourceURL": "https://tv.cctv.com/live/",
+        "recommended": false
+      },
+      "enabled": true,
+      "aliases": [
+        "CCTV5",
+        "央视5套"
+      ]
+    },
+    {
+      "id": "cn.cctv.9",
+      "name": "CCTV-9 纪录",
+      "group": "documentary",
+      "metadata": {
+        "country": "CN",
+        "region": "CN",
+        "languages": [
+          "zh"
+        ],
+        "categories": [
+          "documentary"
+        ],
+        "origin": "community",
+        "authorization": "unverified",
+        "sourceURL": "https://tv.cctv.com/live/",
+        "recommended": false
+      },
+      "enabled": true,
+      "aliases": [
+        "CCTV9",
+        "央视9套"
+      ]
+    },
+    {
+      "id": "cn.cctv.13",
+      "name": "CCTV-13 新闻",
+      "group": "news",
+      "metadata": {
+        "country": "CN",
+        "region": "CN",
+        "languages": [
+          "zh"
+        ],
+        "categories": [
+          "news"
+        ],
+        "origin": "community",
+        "authorization": "unverified",
+        "sourceURL": "https://tv.cctv.com/live/",
+        "recommended": false
+      },
+      "enabled": true,
+      "aliases": [
+        "CCTV13",
+        "央视13套"
+      ]
+    },
+    {
+      "id": "cn.cctv.14",
+      "name": "CCTV-14 少儿",
+      "group": "kids",
+      "metadata": {
+        "country": "CN",
+        "region": "CN",
+        "languages": [
+          "zh"
+        ],
+        "categories": [
+          "kids"
+        ],
+        "origin": "community",
+        "authorization": "unverified",
+        "sourceURL": "https://tv.cctv.com/live/",
+        "recommended": false
+      },
+      "enabled": true,
+      "aliases": [
+        "CCTV14",
+        "央视14套"
+      ]
+    }
+  ]
+}

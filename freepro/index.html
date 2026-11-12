@@ -29,12 +29,14 @@
           <p class="price"><strong>¥0</strong><span>本次兑换免费</span></p>
         </div>
         <div class="ticket-bottom">
+          <div class="code-row"><div><span class="field-label">专属兑换码</span><code id="offer-code">PAWLOGFRIENDS</code></div><button id="copy" type="button" aria-label="复制兑换码 PAWLOGFRIENDS">复制</button></div>
           <div class="offer-actions">
             <a class="redeem" id="redeem" href="projump:pawlog://app/redeem?code=PAWLOGFRIENDS"><span>免费兑换终身会员</span><span aria-hidden="true">↗</span></a>
             <a class="review" href="https://apps.apple.com/app/id6817578515?action=write-review"><span aria-hidden="true">☆</span><span>为一休工具点赞</span></a>
           </div>
           <p class="review-note">喜欢一休工具？留下一份好评，让用心被更多人看见。<br>每一份认可，都是我们持续打磨好工具的动力。</p>
           <p class="deadline">请于 <time datetime="2026-11-20T00:00:00+08:00">2026.11.20 00:00</time> 前兑换<span>北京时间 · 逾期失效</span></p>
+          <p class="review-note">系统要求：苹果系统兑换功能需 iOS 16.3 / iPadOS 16.3 或更高版本，请先确认设备系统版本。</p>
           <p id="status" class="status" role="status" aria-live="polite"></p>
         </div>
       </div>
@@ -47,6 +49,31 @@
     const status = document.querySelector('#status');
     const redeem = document.querySelector('#redeem');
     const cutoff = Date.parse('2026-11-20T00:00:00+08:00');
+    document.querySelector('#copy').addEventListener('click', async () => {
+      const code = document.querySelector('#offer-code').textContent;
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(code);
+        } else {
+          const input = document.createElement('textarea');
+          input.value = code;
+          input.readOnly = true;
+          input.style.position = 'fixed';
+          input.style.opacity = '0';
+          document.body.appendChild(input);
+          try {
+            input.select();
+            input.setSelectionRange(0, code.length);
+            if (!document.execCommand('copy')) throw new Error('Copy failed');
+          } finally {
+            input.remove();
+          }
+        }
+        status.textContent = '兑换码已复制。';
+      } catch {
+        status.textContent = '自动复制失败，请长按上方兑换码手动复制。';
+      }
+    });
     function refreshOffer() {
       if (Date.now() >= cutoff) {
         redeem.removeAttribute('href');

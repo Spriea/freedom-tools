@@ -1,3 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f8f2">
+  <meta name="description" content="PawLog 宠物小本好友福利：免费兑换终身 Pro，有效期至北京时间 2026 年 11 月 20 日 00:00。">
+  <title>免费领取终身 Pro · PawLog 宠物小本</title>
+  <link rel="icon" href="../assets/pawlog.png">
+  <link rel="stylesheet" href="./redeem.css">
+</head>
+<body>
+  <main class="page">
+    <a class="brand" href="../apps/pawlog/"><img src="../assets/pawlog.png" width="40" height="40" alt=""><span>宠物小本 <small>PAWLOG</small></span></a>
+    <section class="offer" aria-labelledby="offer-title">
+      <div class="intro">
+        <span class="eyebrow"><span></span> 给爱宠的你，一份见面礼</span>
+        <h1 id="offer-title">每一天的陪伴，<br>都值得<span class="accent">好好记录。</span></h1>
+        <p class="lead">送你一份宠物小本终身 Pro。<br>把它的成长与日常，留在属于你们的小本里。</p>
+        <div class="benefits"><span><i aria-hidden="true">✓</i> 无限宠物档案</span><span><i aria-hidden="true">✓</i> 完整 ZIP 备份</span><span><i aria-hidden="true">✓</i> 终身 Pro 权益</span></div>
+        <div class="note"><span class="note-icon" aria-hidden="true">♡</span><p>从第一次见面，到每一个平常的日子。<br><strong>让照护有记录，让陪伴有迹可循。</strong></p></div>
+      </div>
+      <div class="ticket">
+        <div class="ticket-top">
+          <div class="ticket-heading"><span class="pill">好友专属福利</span><span class="edition">PAWLOG / PRO</span></div>
+          <div class="gift" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><rect x="12" y="28" width="40" height="26" rx="5"/><rect x="8" y="20" width="48" height="12" rx="4"/><path d="M32 20v34M32 20H22a7 7 0 1 1 7-7l3 7Zm0 0h10a7 7 0 1 0-7-7l-3 7Z"/></svg></div>
+          <p class="ticket-label">宠物小本 · 终身会员</p>
+          <h2>免费领取<span>Lifetime Pro</span></h2>
+          <p class="price"><strong>¥0</strong><span>本次兑换免费</span></p>
+        </div>
+        <div class="ticket-bottom">
+          <div class="offer-actions">
+            <a class="redeem" id="redeem" href="projump:pawlog://app/redeem?code=PAWLOGFRIENDS"><span>免费兑换终身会员</span><span aria-hidden="true">↗</span></a>
+            <a class="review" href="projump:https://apps.apple.com/app/id6817578515?action=write-review"><span aria-hidden="true">☆</span><span>为一休工具点赞</span></a>
+          </div>
+          <p class="review-note">喜欢一休工具？留下一份好评，让用心被更多人看见。<br>每一份认可，都是我们持续打磨好工具的动力。</p>
+          <p class="deadline">请于 <time datetime="2026-11-20T00:00:00+08:00">2026.11.20 00:00</time> 前兑换<span>北京时间 · 逾期失效</span></p>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+    <section class="how" aria-labelledby="how-title"><h2 id="how-title">三步，把这份心意收下</h2><ol><li><span>01</span><div><h3>安装宠物小本</h3><p>在 App Store 搜索「宠物小本」并下载。</p></div></li><li><span>02</span><div><h3>点击免费兑换</h3><p>安装后，在 iPhone 或 iPad 上返回本页，点击按钮打开 App。</p></div></li><li><span>03</span><div><h3>在 App 内完成领取</h3><p>兑换结果以 App 内显示为准。</p></div></li></ol></section>
+    <p class="install">还没有安装？请打开 App Store，搜索「宠物小本」下载。</p>
+    <footer><span>© 2026 PawLog · 宠物小本</span><a href="../apps/pawlog/support.html">需要帮助？</a></footer>
+  </main>
+  <script>
+    const status = document.querySelector('#status');
+    const redeem = document.querySelector('#redeem');
+    const cutoff = Date.parse('2026-11-20T00:00:00+08:00');
+    function refreshOffer() {
+      if (Date.now() >= cutoff) {
+        redeem.removeAttribute('href');
+        redeem.setAttribute('aria-disabled', 'true');
+        redeem.querySelector('span').textContent = '本次兑换活动已结束';
+        status.textContent = '兑换码已过期，感谢你的关注。';
+      }
+    }
+    refreshOffer();
+    setInterval(refreshOffer, 30000);
+    redeem.addEventListener('click', (event) => {
+      refreshOffer();
+      if (redeem.getAttribute('aria-disabled') === 'true') { event.preventDefault(); return; }
+      status.textContent = '正在打开宠物小本；若未跳转，请在 App Store 搜索「宠物小本」并安装，然后返回本页重试。';
+    });
+  </script>
+</body>
+</html>
+
+<!--
+原页面存档：恢复时可移除此注释外壳。内部原有注释分隔符已空格化，避免提前闭合；恢复时还原 < !-- 和 -- >。
  <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -50,10 +120,12 @@
     <h1 id="benefits-title">暂无新App福利</h1>
     <p>发现更多实用应用，欢迎访问官方网站。</p>
     <a class="button" href="../index.html">官方网站</a>
-    <!-- <section class="temporary-offer" aria-label="临时测试入口">
+    < !-- <section class="temporary-offer" aria-label="临时测试入口">
       <p>临时跳转测试</p>
       <a class="button" href="projump:pawlog://app/redeem?code=PAWLOGFRIENDS">打开 Pawlog Pro 福利兑换</a>
-    </section> -->
+    </section> -- >
   </main>
 </body>
 </html>
+
+-->
